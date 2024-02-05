@@ -1,0 +1,1708 @@
+{
+  "id" : 1,
+  "name" : "Name",
+  "description" : "Description",
+  "lastModifiedDate" : "2024-02-02T16:09:10Z",
+  "lastModifiedAgent" : "structurizr-javascript",
+  "properties" : {
+    "structurizr.dsl" : "Ly8gaHR0cHM6Ly9jNG1vZGVsLmNvbS8KLy8gaHR0cHM6Ly9zdHJ1Y3R1cml6ci5jb20vCgoKd29ya3NwYWNlIHsKICAgICFpZGVudGlmaWVycyBoaWVyYXJjaGljYWwKCiAgICBtb2RlbCB7CiAgICAgICAgcmVhZGVyID0gcGVyc29uICJSZWFkZXJzIgogICAgICAgIG93bmVyID0gcGVyc29uICJPd25lciIKICAgICAgICAKICAgICAgICBhdXRoID0gc29mdHdhcmVzeXN0ZW0gIkF1dGhlbnRpY2F0aW9uIiB7CiAgICAgICAgICAgIC8vdGVjaG5vbG9neSAiQXV0aDIiCiAgICAgICAgICAgIHRhZ3MgImV4dGVybmFsIiAic2VjdXJpdHkiICJBenVyZSIgImFkbWluIiAKCQl9ICAgICAgICAKCiAgICAgICAgc29mdHdhcmVTeXN0ZW0gPSBzb2Z0d2FyZVN5c3RlbSAiSlNkb3ROZXQiIHsKICAgICAgICAgICAgCiAgICAgICAgICAgIGFzcGlyZSA9IGNvbnRhaW5lciAiRGV2ZWxvcG1lbnQgRGFzaGJvYXJkIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICIuTmV0IEFzcGlyZSIKICAgICAgICAgICAgICAgIHRhZ3MgImRvYyIgImRldiIgICAgICAgICAgICAgICAKICAgICAgICAgICAgfQoKICAgICAgICAgICAgCiAgICAgICAgICAgIHN0cnVjdHVyaXpyID0gY29udGFpbmVyICJEb2N1bWVudGF0aW9uIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdHJ1Y3R1cml6ciIKICAgICAgICAgICAgICAgIHRhZ3MgImRvYyIgICAgICAgICAgICAgICAgCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIG1vbml0b3JpbmcgPSBjb250YWluZXIgIk1vbml0b3JpbmciIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkFwcGxpY2F0aW9uIEluc2lnaHRzIgogICAgICAgICAgICAgICAgdGFncyAiZXh0ZXJuYWwiICJhZG1pbiIgCiAgICAgICAgICAgIH0KICAgICAgICAgICAgY2FjaGUgPSBjb250YWluZXIgIkNhY2hlIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJSZWRpcyIKICAgICAgICAgICAgICAgIHRhZ3MgImV4dGVybmFsIiAiYWRtaW4iIAogICAgICAgICAgICB9CiAgICAgICAgICAgIC8vIFRPRE8gU2Vjb25kIGRhdGFic2U/CiAgICAgICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiU1FMIgogICAgICAgICAgICAgICAgdGFncyAiZGF0YWJhc2UiICJhZG1pbiIgCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIHdlYkFwaSA9IGNvbnRhaW5lciAiQVBJIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJBcHAgU2VydmljZSIKICAgICAgICAgICAgICAgIC8vdGFncyAic2l0ZSIKCiAgICAgICAgICAgICAgICBncm91cCAiUHJlc2VudGF0aW9uIiB7CiAgICAgICAgICAgICAgICAgICAgYXBpID0gY29tcG9uZW50ICJBUEkiIHsKICAgICAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiQVNQLk5FVCIJCQkJCQogICAgCQkJCX0KICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGVuZHBvaW50cyA9IGNvbXBvbmVudCAiQVBJLkVuZHBvaW50cyIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJNaW5pbWFsIEFQSSIJCQkJCQogICAgCQkgICAgICAgIH0KICAgIAkJICAgICAgICAKICAgIAkJICAgICAgICBhcGkgLT4gZW5kcG9pbnRzICJpbmNsdWRlcyIKICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICBncm91cCAiQ29yZSIgewogICAgICAgICAgICAgICAgICAgIC8vIFRPRE8gIWluY2x1ZGUgY29yZS5kc2wKICAgICAgICAgICAgICAgICAgICBhcHBsaWNhdGlvbiA9IGNvbXBvbmVudCAiQXBwbGljYXRpb24iIHsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBkb21haW4gPSBjb21wb25lbnQgIkRvbWFpbiIgewogICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBncm91cCAiSW5mcmFzdHJ1Y3R1cmUiIHsKICAgICAgICAgICAgICAgICAgICAvLyBUT0RPICFpbmNsdWRlIGluZnJhc3RydWN0dXJlLmRzbAogICAgICAgICAgICAgICAgICAgIGVmID0gY29tcG9uZW50ICJFRiIgewogICAgICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkVudGl0eSBGcmFtZXdvcmsiICAgIAogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBhcGkgLT4gbW9uaXRvcmluZyAibG9ncyB0byIKICAgICAgICAgICAgICAgIGFwaSAtPiBlZiAicmVnaXN0ZXJlcyIKICAgICAgICAgICAgICAgIGVuZHBvaW50cyAtPiBhcHBsaWNhdGlvbiAiZGVwZW5kcyBvbiIKICAgICAgICAgICAgICAgIGFwcGxpY2F0aW9uIC0+IGRvbWFpbiAiZGVwZW5kcyBvbiIKICAgICAgICAgICAgICAgIGFwcGxpY2F0aW9uIC0+IGVmICJvZmxvYWRzIHRvIgogICAgICAgICAgICAgICAgZWYgLT4gYXBwbGljYXRpb24gInVzZXMiCiAgICAgICAgICAgICAgICBlZiAtPiBkb21haW4gImltcGxlbWVudHMgZXh0ZXJuYWwgY29uc2VybnMgZm9yIgogICAgICAgICAgICAgICAgZWYgLT4gZGF0YWJhc2UgInJlYWQgZnJvbSIKICAgICAgICAgICAgfQogICAgICAgICAgICB3ZWJhcHAgPSBjb250YWluZXIgIkpTZG90TmV0IiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTdGF0aWMgd2ViIGFwcCIKICAgICAgICAgICAgICAgIHRhZ3MgInB1YmxpYyIgLy8ic2l0ZSIKCiAgICAgICAgICAgICAgICBncm91cCAiUHJlc2VudGF0aW9uIiB7CiAgICAgICAgICAgICAgICAgICAgd2ViID0gY29tcG9uZW50ICJXZWIiIHsKICAgICAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiQmxhem9yIgkJCQkJCiAgICAJCQkJfQogICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgd2ViX2V4cGVyaWVuY2UgPSBjb21wb25lbnQgIldlYi5FeHBlcmllbmNlIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkJsYXpvciBjb21wb25lbnRzIgkJCQkJCiAgICAJCSAgICAgICAgfQogICAgCQkgICAgICAgIHdlYl9zdGF0aXN0aWNzID0gY29tcG9uZW50ICJXZWIuU3RhdGlzdGljcyIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJCbGF6b3IgY29tcG9uZW50cyIJCQkJCQogICAgCQkgICAgICAgIH0KICAgIAkJICAgICAgICB3ZWJfYmxvZyA9IGNvbXBvbmVudCAiV2ViLkJsb2ciIHsKICAgICAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiQmxhem9yIGNvbXBvbmVudHMiCQkJCQkKICAgIAkJICAgICAgICB9CiAgICAJCSAgICAgICAgd2ViX2FyY2hpdGVjdHVyZSA9IGNvbXBvbmVudCAiV2ViLkFyY2hpdGVjdHVyZSIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJCbGF6b3IgY29tcG9uZW50cyIJCQkJCQogICAgCQkgICAgICAgIH0KICAgIAkJICAgICAgICAKICAgIAkJICAgICAgICB3ZWIgLT4gbW9uaXRvcmluZyAibG9ncyB0byIKICAgIAkJICAgICAgICB3ZWIgLT4gd2ViX2V4cGVyaWVuY2UgImluY2x1ZGVzIgogICAgCQkgICAgICAgIHdlYiAtPiB3ZWJfc3RhdGlzdGljcyAiaW5jbHVkZXMiCiAgICAJCSAgICAgICAgd2ViIC0+IHdlYl9ibG9nICJpbmNsdWRlcyIKICAgIAkJICAgICAgICB3ZWIgLT4gd2ViX2FyY2hpdGVjdHVyZSAiaW5jbHVkZXMiCiAgICAJCSAgICAgICAgCiAgICAJCSAgICAgICAgd2ViX2V4cGVyaWVuY2UgLT4gd2ViQXBpLmFwaSAicmVxdWVzdHMgZnJvbSIKICAgIAkJICAgICAgICB3ZWJfc3RhdGlzdGljcyAtPiBtb25pdG9yaW5nICJyZXF1ZXN0cyBmcm9tIgogICAgCQkgICAgICAgIC8vIFRPRE8gPz8/IHdlYl9ibG9nIC0+IHdlYkFwaSAidXNlcyIKICAgIAkJICAgICAgICB3ZWJfYXJjaGl0ZWN0dXJlIC0+IHN0cnVjdHVyaXpyICJlbWJlZHMiCiAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICBhZG1pbmFwcCA9IGNvbnRhaW5lciAiSlNkb3ROZXQgQWRtaW4gQXBwIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJBcHAgU2VydmljZSIKICAgICAgICAgICAgICAgIHRhZ3MgIlNTUiIgInB1YmxpYyIgImFkbWluIgoKICAgICAgICAgICAgICAgIGdyb3VwICJQcmVzZW50YXRpb24iIHsKICAgICAgICAgICAgICAgICAgICB3ZWIgPSBjb21wb25lbnQgIldFQiIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJCbGF6b3IiCQkJCQkKICAgIAkJCQl9CiAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICB3ZWJfYWRtaW4gPSBjb21wb25lbnQgIldlYi5BZG1pbiIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJCbGF6b3IgY29tcG9uZW50cyIJCQkJCQogICAgCQkgICAgICAgIH0KICAgIAkJICAgICAgICAKICAgIAkJICAgICAgICB3ZWIgLT4gd2ViX2FkbWluICJpbmNsdWRlcyIKICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICBncm91cCAiQ29yZSIgewogICAgICAgICAgICAgICAgICAgIC8vIFRPRE8gIWluY2x1ZGUgY29yZS5kc2wKICAgICAgICAgICAgICAgICAgICBhcHBsaWNhdGlvbiA9IGNvbXBvbmVudCAiQXBwbGljYXRpb24iIHsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBkb21haW4gPSBjb21wb25lbnQgIkRvbWFpbiIgewogICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBncm91cCAiSW5mcmFzdHJ1Y3R1cmUiIHsKICAgICAgICAgICAgICAgICAgICAvLyBUT0RPICFpbmNsdWRlIGluZnJhc3RydWN0dXJlLmRzbAogICAgICAgICAgICAgICAgICAgIGVmID0gY29tcG9uZW50ICJFRiIgewogICAgICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkVudGl0eSBGcmFtZXdvcmsiICAgIAogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB3ZWIgLT4gbW9uaXRvcmluZyAibG9ncyB0byIKICAgICAgICAgICAgICAgIHdlYiAtPiBlZiAicmVnaXN0ZXJlcyIKICAgICAgICAgICAgICAgIHdlYl9hZG1pbiAtPiBhcHBsaWNhdGlvbiAiZGVwZW5kcyBvbiIKICAgICAgICAgICAgICAgIGFwcGxpY2F0aW9uIC0+IGRvbWFpbiAiZGVwZW5kcyBvbiIKICAgICAgICAgICAgICAgIGFwcGxpY2F0aW9uIC0+IGVmICJvZmxvYWRzIHRvIgogICAgICAgICAgICAgICAgZWYgLT4gYXBwbGljYXRpb24gInVzZXMiCiAgICAgICAgICAgICAgICBlZiAtPiBkb21haW4gImltcGxlbWVudHMgZXh0ZXJuYWwgY29uc2VybnMgZm9yIgogICAgICAgICAgICAgICAgZWYgLT4gZGF0YWJhc2UgInJlYWQgZnJvbSBhbmQgd3JpdGVzIHRvIgogICAgICAgICAgICB9CiAgICAgICAgICAgIAoKICAgICAgICAgICAgcmVhZGVyIC0+IHdlYmFwcC53ZWIgInVzZSIKICAgICAgICAgICAgb3duZXIgLT4gYWRtaW5hcHAud2ViICJtYWludGFpbnMgY29udGVudCB0aHJvdWdoIgogICAgICAgICAgICAKICAgICAgICAgICAgLy93ZWJhcHAgLT4gd2ViQXBpICJVc2VzIgoKICAgICAgICAgICAgLy93ZWJhcHAgLT4gbW9uaXRvcmluZyAibG9ncyB0byIKICAgICAgICAgICAgLy9hZG1pbmFwcCAtPiBtb25pdG9yaW5nICJsb2dzIHRvIgogICAgICAgICAgICAvL3dlYkFwaSAtPiBtb25pdG9yaW5nICJsb2dzIHRvIiAKCiAgICAgICAgICAgIHdlYmFwcCAtPiBjYWNoZSAiVXNlcyIKICAgICAgICAgICAgd2ViYXBwIC0+IGNhY2hlICJTdWJzY3JpYmVzIgogICAgICAgICAgICBhZG1pbmFwcCAtPiBjYWNoZSAiUHVibGlzaGVzIgogICAgICAgICAgICAKICAgICAgICAgICAgd2ViYXBwIC0+IGF1dGggInVzZXMgYXV0aGVudGljYXRpb24gc2Vydml2ZSIKICAgICAgICAgICAgYWRtaW5hcHAgLT4gYXV0aCAidXNlcyBhdXRoZW50aWNhdGlvbiBzZXJ2aXZlIgogICAgICAgIH0KICAgICAgICAKICAgICAgICAKICAgICAgICBkZXBsb3ltZW50RW52aXJvbm1lbnQgIkRldmVsb3BtZW50IiB7CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEZXZlbG9wZXIgTGFwdG9wIiAiIiAiTWljcm9zb2Z0IFdpbmRvd3MgMTEiIHsKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJXZWIgQnJvd3NlciIgIiIgIkNocm9tZSwgRmlyZWZveCwgU2FmYXJpLCBvciBFZGdlIiB7CiAgICAgICAgICAgICAgICAgICAgZGV2ZWxvcGVyRGFzaGJvYXJkSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5hc3BpcmUKICAgICAgICAgICAgICAgIH0gICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJsb2NhbCIgIiIgIlZpc3VhbCBTdHVkaW8iIHsKICAgICAgICAgICAgICAgICAgICBkZXZlbG9wZXJXZWJBcHBJbnN0YW5jZSA9IGNvbnRhaW5lckluc3RhbmNlIHNvZnR3YXJlU3lzdGVtLndlYmFwcAogICAgICAgICAgICAgICAgICAgIGRldmVsb3BlckFkbWluQXBwSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5hZG1pbmFwcAogICAgICAgICAgICAgICAgICAgIGRldmVsb3BlckFwaUFwcGxpY2F0aW9uSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS53ZWJBcGkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEb2NrZXIgRGVza3RvcCIgIiIgIiIgewogICAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEb2NrZXIgQ29udGFpbmVyIC0gRGF0YWJhc2UgU2VydmVyIiAiIiAiRG9ja2VyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEYXRhYmFzZSBTZXJ2ZXIiICIiICJTUUwiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRldmVsb3BlckRhdGFiYXNlSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5kYXRhYmFzZQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEb2NrZXIgQ29udGFpbmVyIC0gQ2FjaGUiICIiICJEb2NrZXIiIHsKICAgICAgICAgICAgICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIlJlZGlzIiAiIiAiUmVkaXMiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRldmVsb3BlclJlZGlzSW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5jYWNoZQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJEb2NrZXIgQ29udGFpbmVyIC0gU3RydXR1cml6ciIgIiIgIkRvY2tlciIgewogICAgICAgICAgICAgICAgICAgICAgICBkZXBsb3ltZW50Tm9kZSAiU3RydWN0dXJpenIgbGl0ZSIgIiIgIkphdmEiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRldmVsb3BlclN0cnVjdHVyaXpySW5zdGFuY2UgPSBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5zdHJ1Y3R1cml6cgogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIGRlcGxveW1lbnROb2RlICJTZG90TmV0LkRldmVsb3BtZW50IiAiIiAiQXp1cmUgUmVzb3VyY2UgR3JvdXAiIHsKICAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBzb2Z0d2FyZVN5c3RlbS5tb25pdG9yaW5nCiAgICAgICAgICAgIH0KICAgICAgICB9CgoKICAgICAgICBkZXBsb3ltZW50RW52aXJvbm1lbnQgIlByb2R1Y3Rpb24iIHsKICAgICAgICAKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIkpTZG90TmV0LlByb2R1Y3Rpb24iICIiICJBenVyZSBSZXNvdXJjZSBHcm91cCIgewogICAgICAgICAgICAgICAgLy8gVE9ETyAuLi4KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2Ugc29mdHdhcmVTeXN0ZW0ubW9uaXRvcmluZwogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgIH0KICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBzb2Z0d2FyZVN5c3RlbSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJMZXZlbCAxOiBBIFN5c3RlbSBDb250ZXh0IGRpYWdyYW0gcHJvdmlkZXMgYSBzdGFydGluZyBwb2ludCwgc2hvd2luZyBob3cgdGhlIHNvZnR3YXJlIHN5c3RlbSBpbiBzY29wZSBmaXRzIGludG8gdGhlIHdvcmxkIGFyb3VuZCBpdC4iCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgc29mdHdhcmVTeXN0ZW0gIkpTZG90TmV0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBleGNsdWRlIHNvZnR3YXJlU3lzdGVtLmFzcGlyZQogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJMZXZlbCAyOiBBIENvbnRhaW5lciBkaWFncmFtIHpvb21zIGludG8gdGhlIHNvZnR3YXJlIHN5c3RlbSBpbiBzY29wZSwgc2hvd2luZyB0aGUgaGlnaC1sZXZlbCB0ZWNobmljYWwgYnVpbGRpbmcgYmxvY2tzLiIKICAgICAgICB9CiAgICAgICAgLy9maWx0ZXJlZCAiSlNkb3ROZXQiIGluY2x1ZGUgKiAiQWxsIiAKICAgICAgICAvL2ZpbHRlcmVkICJKU2RvdE5ldCIgZXhjbHVkZSAiYWRtaW4iICJKU2RvdE5ldF9QdWJsaWMiCiAgICAgICAgLy9maWx0ZXJlZCAiSlNkb3ROZXQiIGluY2x1ZGUgImFkbWluIiAiSlNkb3ROZXRfQWRtaW4iCgogICAgICAgIGNvbXBvbmVudCBzb2Z0d2FyZVN5c3RlbS53ZWJBcGkgIkNvbXBvbmVudHNBcGkiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkxldmVsIDM6IEEgQ29tcG9uZW50IGRpYWdyYW0gem9vbXMgaW50byBhbiBpbmRpdmlkdWFsIGNvbnRhaW5lciwgc2hvd2luZyB0aGUgY29tcG9uZW50cyBpbnNpZGUgaXQuIgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IHNvZnR3YXJlU3lzdGVtLndlYmFwcCAiQ29tcG9uZW50c1JlYWRlckFwcCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBkZXNjcmlwdGlvbiAiTGV2ZWwgMzogQSBDb21wb25lbnQgZGlhZ3JhbSB6b29tcyBpbnRvIGFuIGluZGl2aWR1YWwgY29udGFpbmVyLCBzaG93aW5nIHRoZSBjb21wb25lbnRzIGluc2lkZSBpdC4iCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGNvbXBvbmVudCBzb2Z0d2FyZVN5c3RlbS5hZG1pbmFwcCAiQ29tcG9uZW50c0FkbWluQXBwIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJMZXZlbCAzOiBBIENvbXBvbmVudCBkaWFncmFtIHpvb21zIGludG8gYW4gaW5kaXZpZHVhbCBjb250YWluZXIsIHNob3dpbmcgdGhlIGNvbXBvbmVudHMgaW5zaWRlIGl0LiIKICAgICAgICB9CgoKICAgICAgICAvL2ltYWdlIG1haW5mcmFtZUJhbmtpbmdTeXN0ZW1GYWNhZGUgIk1haW5mcmFtZUJhbmtpbmdTeXN0ZW1GYWNhZGUiIHsKICAgICAgICAvLyAgICBpbWFnZSBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vc3RydWN0dXJpenIvZXhhbXBsZXMvbWFpbi9kc2wvYmlnLWJhbmstcGxjL2ludGVybmV0LWJhbmtpbmctc3lzdGVtL21haW5mcmFtZS1iYW5raW5nLXN5c3RlbS1mYWNhZGUucG5nCiAgICAgICAgLy8gICAgdGl0bGUgIltDb2RlXSBNYWluZnJhbWUgQmFua2luZyBTeXN0ZW0gRmFjYWRlIgogICAgICAgIC8vfQoKICAgICAgICAvLyBUT0RPIEluY2x1ZGUgb3V0Ym94CiAgICAgICAgZHluYW1pYyBzb2Z0d2FyZVN5c3RlbSAiQ2FjaGluZyIgIlN1bW1hcmlzZXMgUHVibGlzaCBzdWJzY2liZSB0aHJvdWdoIGNhY2hlIHdvcmtzIiB7CiAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtLmFkbWluYXBwIC0+IHNvZnR3YXJlU3lzdGVtLmRhdGFiYXNlICJVcGRhdGUgc29tZSBkYXRhIgogICAgICAgICAgICBzb2Z0d2FyZVN5c3RlbS5hZG1pbmFwcCAtPiBzb2Z0d2FyZVN5c3RlbS5jYWNoZSAiUHVibGlzaGVzIHRvIgogICAgICAgICAgICBzb2Z0d2FyZVN5c3RlbS53ZWJhcHAgLT4gc29mdHdhcmVTeXN0ZW0uY2FjaGUgIlN1YnNjcmliZWQgdG8iCiAgICAgICAgICAgIHNvZnR3YXJlU3lzdGVtLndlYmFwcCAtPiBzb2Z0d2FyZVN5c3RlbS53ZWJBcGkgIkZldGNoIG1vcmUgZGF0YSIKICAgICAgICAgICAgc29mdHdhcmVTeXN0ZW0ud2ViQXBpIC0+IHNvZnR3YXJlU3lzdGVtLmRhdGFiYXNlICJyZWFkcyBmcm9tIgogICAgICAgICAgICBzb2Z0d2FyZVN5c3RlbS5kYXRhYmFzZSAtPiBzb2Z0d2FyZVN5c3RlbS53ZWJBcGkgInJlc3VsdCIKICAgICAgICAgICAgc29mdHdhcmVTeXN0ZW0ud2ViQXBpIC0+IHNvZnR3YXJlU3lzdGVtLndlYmFwcCAicmVzcG9uc2UiCiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgCiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdW1tYXJpc2VzIHRoZSBwdWJsaXNoIHN1YnNjcmliZSB0aHJvdWdoIFJlZGlzIGNhY2hlLiIKICAgICAgICB9CgogICAgICAgIGRlcGxveW1lbnQgc29mdHdhcmVTeXN0ZW0gIkRldmVsb3BtZW50IiAiRGV2ZWxvcG1lbnREZXBsb3ltZW50IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICAvL2FuaW1hdGlvbiB7CiAgICAgICAgICAgIC8vICAgIHNvZnR3YXJlU3lzdGVtLmRlcGxveW1lbnRFbnZpcm9ubWVudC5kZXZlbG9wZXJEYXRhYmFzZUluc3RhbmNlIHNvZnR3YXJlU3lzdGVtLmRlcGxveW1lbnRFbnZpcm9ubWVudC5kZXZlbG9wZXJSZWRpc0luc3RhbmNlIHNvZnR3YXJlU3lzdGVtLmRlcGxveW1lbnRFbnZpcm9ubWVudC5kZXZlbG9wZXJTdHJ1Y3R1cml6ckluc3RhbmNlCiAgICAgICAgICAgICAgICAvL2RldmVsb3BlcldlYkFwcEluc3RhbmNlICBkZXZlbG9wZXJBZG1pbkFwcEluc3RhbmNlIGRldmVsb3BlckFwaUFwcGxpY2F0aW9uSW5zdGFuY2UKICAgICAgICAgICAgICAgIC8vZGV2ZWxvcGVyRGF0YWJhc2VJbnN0YW5jZQogICAgICAgICAgICAvL30KICAgICAgICAgICAgYXV0b0xheW91dAogICAgICAgICAgICBkZXNjcmlwdGlvbiAiRGVwbG95bWVudCBmb3IgbG9jYWwgZGV2ZWxvcG1lbnQiCiAgICAgICAgfQoKICAgICAgICBkZXBsb3ltZW50IHNvZnR3YXJlU3lzdGVtICJQcm9kdWN0aW9uIiAiUHJvZHVjdGlvbkRlcGxveW1lbnQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIC8vYW5pbWF0aW9uIHsKICAgICAgICAgICAgLy8gICAgZGV2ZWxvcGVyU2luZ2xlUGFnZUFwcGxpY2F0aW9uSW5zdGFuY2UKICAgICAgICAgICAgLy8gICAgZGV2ZWxvcGVyV2ViQXBwbGljYXRpb25JbnN0YW5jZSBkZXZlbG9wZXJBcGlBcHBsaWNhdGlvbkluc3RhbmNlCiAgICAgICAgICAgIC8vICAgIGRldmVsb3BlckRhdGFiYXNlSW5zdGFuY2UKICAgICAgICAgICAgLy99CiAgICAgICAgICAgIGF1dG9MYXlvdXQKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkRlcGxveW1lbnQgb24gQXp1cmUiCiAgICAgICAgfQoKICAgICAgICB0aGVtZSBkZWZhdWx0CiAgICAgICAgCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiUGVyc29uIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM0RDc4ODcKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgICAgIGZvbnRTaXplIDIyCiAgICAgICAgICAgICAgICBzaGFwZSBQZXJzb24KICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0MxOUY0NAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CgogICAgICAgICAgICAvL1RPRE8gZmlsdGVyZWQgIlNvZnR3YXJlIFN5c3RlbSIgaW5jbHVkZSAiRWxlbWVudCxSZWxhdGlvbnNoaXAiIFtrZXldIFtkZXNjcmlwdGlvbl0KICAgICAgICAgICAgCiAgICAgICAgICAgIGVsZW1lbnQgIkNvbnRhaW5lciIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjQzE5RjQ0CiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiZGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzRENzg4NwogICAgICAgICAgICAgICAgc2hhcGUgQ3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNEMDRFM0YKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICAvLyBUT0RPIEZvY3VzIG9uIGVudHJ5IHBvaW50cwogICAgICAgICAgICBlbGVtZW50ICJwdWJsaWMiIHsKICAgICAgICAgICAgICAgIGZvbnRTaXplIDIyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiZXh0ZXJuYWwiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0MyQjM5RQogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgImRvYyIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjQzJCMzlFCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIC8vIFRPRE8gdGVjaG5vbG9neSBpY29ucwogICAgICAgICAgICBlbGVtZW50ICJzcWwiIHsKCQkJCWJhY2tncm91bmQgcmVkCQkJCQogICAgICAgICAgICAgICAgLy9pY29uIAoJCQl9CiAgICAgICAgICAgIGVsZW1lbnQgImFwcGluc2lnaHRzIiB7CgkJCQliYWNrZ3JvdW5kIHJlZAkJCQkKICAgICAgICAgICAgICAgIC8vaWNvbiAKCQkJfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiRmFpbG92ZXIiIHsKICAgICAgICAgICAgICAgIG9wYWNpdHkgMjUKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgLy8gVE9ETyAuLi4KICAgICAgICAvL2JyYW5kaW5nIHsKICAgICAgICAvLyAgICBsb2dvIDxmaWxlfHVybD4KICAgICAgICAvLyAgICBmb250IDxuYW1lPiBbdXJsXQogICAgICAgIC8vfQogICAgfQp9Cg=="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "2",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "owner"
+      },
+      "name" : "Owner",
+      "relationships" : [ {
+        "id" : "67",
+        "sourceId" : "2",
+        "destinationId" : "46",
+        "description" : "maintains content through",
+        "linkedRelationshipId" : "66"
+      }, {
+        "id" : "68",
+        "sourceId" : "2",
+        "destinationId" : "4",
+        "description" : "maintains content through",
+        "linkedRelationshipId" : "66"
+      }, {
+        "id" : "66",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "81caf429-ee80-4337-b9c8-fbc780e53912"
+        },
+        "sourceId" : "2",
+        "destinationId" : "47",
+        "description" : "maintains content through"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "properties" : {
+        "structurizr.dsl.identifier" : "reader"
+      },
+      "name" : "Readers",
+      "relationships" : [ {
+        "id" : "64",
+        "sourceId" : "1",
+        "destinationId" : "27",
+        "description" : "use",
+        "linkedRelationshipId" : "63"
+      }, {
+        "id" : "65",
+        "sourceId" : "1",
+        "destinationId" : "4",
+        "description" : "use",
+        "linkedRelationshipId" : "63"
+      }, {
+        "id" : "63",
+        "tags" : "Relationship",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2e5f4ad4-8d35-4067-b129-15bfd2845f6b"
+        },
+        "sourceId" : "1",
+        "destinationId" : "28",
+        "description" : "use"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "3",
+      "tags" : "Element,Software System,external,security,Azure,admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "auth"
+      },
+      "name" : "Authentication",
+      "location" : "Unspecified",
+      "documentation" : { }
+    }, {
+      "id" : "4",
+      "tags" : "Element,Software System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "softwaresystem"
+      },
+      "name" : "JSdotNet",
+      "relationships" : [ {
+        "id" : "73",
+        "sourceId" : "4",
+        "destinationId" : "3",
+        "description" : "uses authentication servive",
+        "linkedRelationshipId" : "72"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "10",
+        "tags" : "Element,Container",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.webapi"
+        },
+        "name" : "API",
+        "relationships" : [ {
+          "id" : "18",
+          "sourceId" : "10",
+          "destinationId" : "7",
+          "description" : "logs to",
+          "linkedRelationshipId" : "17"
+        }, {
+          "id" : "26",
+          "sourceId" : "10",
+          "destinationId" : "9",
+          "description" : "read from",
+          "linkedRelationshipId" : "25"
+        } ],
+        "technology" : "App Service",
+        "components" : [ {
+          "id" : "16",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapi.ef"
+          },
+          "name" : "EF",
+          "relationships" : [ {
+            "id" : "23",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "975bfa34-858d-464a-8ea3-c8a51aefe2e3"
+            },
+            "sourceId" : "16",
+            "destinationId" : "14",
+            "description" : "uses"
+          }, {
+            "id" : "25",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "05bd700a-72f8-40bf-9479-71c746996c07"
+            },
+            "sourceId" : "16",
+            "destinationId" : "9",
+            "description" : "read from"
+          }, {
+            "id" : "24",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "be31487d-3328-4a3e-a052-7db019a2b9ff"
+            },
+            "sourceId" : "16",
+            "destinationId" : "15",
+            "description" : "implements external conserns for"
+          } ],
+          "group" : "Infrastructure",
+          "technology" : "Entity Framework",
+          "documentation" : { }
+        }, {
+          "id" : "15",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapi.domain"
+          },
+          "name" : "Domain",
+          "group" : "Core",
+          "documentation" : { }
+        }, {
+          "id" : "12",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapi.endpoints"
+          },
+          "name" : "API.Endpoints",
+          "relationships" : [ {
+            "id" : "20",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "31ffbb6f-1c75-4962-9727-48b8c2f52f89"
+            },
+            "sourceId" : "12",
+            "destinationId" : "14",
+            "description" : "depends on"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Minimal API",
+          "documentation" : { }
+        }, {
+          "id" : "11",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapi.api"
+          },
+          "name" : "API",
+          "relationships" : [ {
+            "id" : "17",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4eeb0903-f489-486a-b1bc-2862c279a46c"
+            },
+            "sourceId" : "11",
+            "destinationId" : "7",
+            "description" : "logs to"
+          }, {
+            "id" : "13",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8ed4167d-3e0e-4827-b2c0-6b3f4a406d0f"
+            },
+            "sourceId" : "11",
+            "destinationId" : "12",
+            "description" : "includes"
+          }, {
+            "id" : "19",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4a1aed2c-84ef-48a7-9fcf-3f1f58d4cc12"
+            },
+            "sourceId" : "11",
+            "destinationId" : "16",
+            "description" : "registeres"
+          } ],
+          "group" : "Presentation",
+          "technology" : "ASP.NET",
+          "documentation" : { }
+        }, {
+          "id" : "14",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapi.application"
+          },
+          "name" : "Application",
+          "relationships" : [ {
+            "id" : "21",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4abfc9c0-b7f1-4ad4-994d-2ecf76068150"
+            },
+            "sourceId" : "14",
+            "destinationId" : "15",
+            "description" : "depends on"
+          }, {
+            "id" : "22",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8ef962a1-8ba3-4c8b-a2db-d3691397c8a4"
+            },
+            "sourceId" : "14",
+            "destinationId" : "16",
+            "description" : "ofloads to"
+          } ],
+          "group" : "Core",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "5",
+        "tags" : "Element,Container,doc,dev",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.aspire"
+        },
+        "name" : "Development Dashboard",
+        "technology" : ".Net Aspire",
+        "documentation" : { }
+      }, {
+        "id" : "9",
+        "tags" : "Element,Container,database,admin",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.database"
+        },
+        "name" : "Database",
+        "technology" : "SQL",
+        "documentation" : { }
+      }, {
+        "id" : "46",
+        "tags" : "Element,Container,SSR,public,admin",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.adminapp"
+        },
+        "name" : "JSdotNet Admin App",
+        "relationships" : [ {
+          "id" : "74",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d6ea5e17-5bd6-486b-9719-451e80f5a27f"
+          },
+          "sourceId" : "46",
+          "destinationId" : "3",
+          "description" : "uses authentication servive"
+        }, {
+          "id" : "62",
+          "sourceId" : "46",
+          "destinationId" : "9",
+          "description" : "read from and writes to",
+          "linkedRelationshipId" : "61"
+        }, {
+          "id" : "71",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "5a35d567-66e0-4f97-8033-6224c1b5c9e4"
+          },
+          "sourceId" : "46",
+          "destinationId" : "8",
+          "description" : "Publishes"
+        }, {
+          "id" : "54",
+          "sourceId" : "46",
+          "destinationId" : "7",
+          "description" : "logs to",
+          "linkedRelationshipId" : "53"
+        } ],
+        "technology" : "App Service",
+        "components" : [ {
+          "id" : "52",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.adminapp.ef"
+          },
+          "name" : "EF",
+          "relationships" : [ {
+            "id" : "59",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2b127b71-588e-4cc8-9004-0a7ae086d77b"
+            },
+            "sourceId" : "52",
+            "destinationId" : "50",
+            "description" : "uses"
+          }, {
+            "id" : "61",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "3b27b289-01ca-443d-888c-e6e42fa57b90"
+            },
+            "sourceId" : "52",
+            "destinationId" : "9",
+            "description" : "read from and writes to"
+          }, {
+            "id" : "60",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f2fe8218-ce78-4ecd-9183-6b96a65729a4"
+            },
+            "sourceId" : "52",
+            "destinationId" : "51",
+            "description" : "implements external conserns for"
+          } ],
+          "group" : "Infrastructure",
+          "technology" : "Entity Framework",
+          "documentation" : { }
+        }, {
+          "id" : "47",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.adminapp.web"
+          },
+          "name" : "WEB",
+          "relationships" : [ {
+            "id" : "49",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8296cc0d-5637-486a-b52f-42cca672d1e0"
+            },
+            "sourceId" : "47",
+            "destinationId" : "48",
+            "description" : "includes"
+          }, {
+            "id" : "53",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f956f52e-5c4e-4b45-89db-b8fa95c43c7f"
+            },
+            "sourceId" : "47",
+            "destinationId" : "7",
+            "description" : "logs to"
+          }, {
+            "id" : "55",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "8288507c-b934-43ab-b477-13f59d664634"
+            },
+            "sourceId" : "47",
+            "destinationId" : "52",
+            "description" : "registeres"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor",
+          "documentation" : { }
+        }, {
+          "id" : "51",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.adminapp.domain"
+          },
+          "name" : "Domain",
+          "group" : "Core",
+          "documentation" : { }
+        }, {
+          "id" : "48",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.adminapp.web_admin"
+          },
+          "name" : "Web.Admin",
+          "relationships" : [ {
+            "id" : "56",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "65efeefc-9852-471f-b82a-f80178ac75ca"
+            },
+            "sourceId" : "48",
+            "destinationId" : "50",
+            "description" : "depends on"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor components",
+          "documentation" : { }
+        }, {
+          "id" : "50",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.adminapp.application"
+          },
+          "name" : "Application",
+          "relationships" : [ {
+            "id" : "58",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "ffd4e289-22dc-4b17-9833-85fea1924d20"
+            },
+            "sourceId" : "50",
+            "destinationId" : "52",
+            "description" : "ofloads to"
+          }, {
+            "id" : "57",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "0197c344-afc2-4188-b8da-805ed788d026"
+            },
+            "sourceId" : "50",
+            "destinationId" : "51",
+            "description" : "depends on"
+          } ],
+          "group" : "Core",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "8",
+        "tags" : "Element,Container,external,admin",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.cache"
+        },
+        "name" : "Cache",
+        "technology" : "Redis",
+        "documentation" : { }
+      }, {
+        "id" : "27",
+        "tags" : "Element,Container,public,//\"site\"",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.webapp"
+        },
+        "name" : "JSdotNet",
+        "relationships" : [ {
+          "id" : "34",
+          "sourceId" : "27",
+          "destinationId" : "7",
+          "description" : "logs to",
+          "linkedRelationshipId" : "33"
+        }, {
+          "id" : "45",
+          "sourceId" : "27",
+          "destinationId" : "6",
+          "description" : "embeds",
+          "linkedRelationshipId" : "44"
+        }, {
+          "id" : "42",
+          "sourceId" : "27",
+          "destinationId" : "10",
+          "description" : "requests from",
+          "linkedRelationshipId" : "39"
+        }, {
+          "id" : "41",
+          "sourceId" : "27",
+          "destinationId" : "11",
+          "description" : "requests from",
+          "linkedRelationshipId" : "39"
+        }, {
+          "id" : "69",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "7e41de7b-fe00-47ca-ac66-e4a56b6551c5"
+          },
+          "sourceId" : "27",
+          "destinationId" : "8",
+          "description" : "Uses"
+        }, {
+          "id" : "70",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8bb13d3a-920d-4841-b01c-f402e310d0d6"
+          },
+          "sourceId" : "27",
+          "destinationId" : "8",
+          "description" : "Subscribes"
+        }, {
+          "id" : "72",
+          "tags" : "Relationship",
+          "properties" : {
+            "structurizr.dsl.identifier" : "c2b9fe40-abda-4d6e-a613-449bb78ef9e1"
+          },
+          "sourceId" : "27",
+          "destinationId" : "3",
+          "description" : "uses authentication servive"
+        } ],
+        "technology" : "Static web app",
+        "components" : [ {
+          "id" : "32",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapp.web_architecture"
+          },
+          "name" : "Web.Architecture",
+          "relationships" : [ {
+            "id" : "44",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "02e06f19-fcb0-4b75-bb67-dc9752174c68"
+            },
+            "sourceId" : "32",
+            "destinationId" : "6",
+            "description" : "embeds"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor components",
+          "documentation" : { }
+        }, {
+          "id" : "29",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapp.web_experience"
+          },
+          "name" : "Web.Experience",
+          "relationships" : [ {
+            "id" : "40",
+            "sourceId" : "29",
+            "destinationId" : "10",
+            "description" : "requests from",
+            "linkedRelationshipId" : "39"
+          }, {
+            "id" : "39",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "7ea304c4-91da-4a75-a8f7-2aa7ae7f6bbb"
+            },
+            "sourceId" : "29",
+            "destinationId" : "11",
+            "description" : "requests from"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor components",
+          "documentation" : { }
+        }, {
+          "id" : "30",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapp.web_statistics"
+          },
+          "name" : "Web.Statistics",
+          "relationships" : [ {
+            "id" : "43",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9bfe3bad-5835-409b-9652-98f15032f48a"
+            },
+            "sourceId" : "30",
+            "destinationId" : "7",
+            "description" : "requests from"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor components",
+          "documentation" : { }
+        }, {
+          "id" : "31",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapp.web_blog"
+          },
+          "name" : "Web.Blog",
+          "group" : "Presentation",
+          "technology" : "Blazor components",
+          "documentation" : { }
+        }, {
+          "id" : "28",
+          "tags" : "Element,Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "softwaresystem.webapp.web"
+          },
+          "name" : "Web",
+          "relationships" : [ {
+            "id" : "33",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "9c86ba8a-8ae6-40d1-9837-aeb9d9904fe1"
+            },
+            "sourceId" : "28",
+            "destinationId" : "7",
+            "description" : "logs to"
+          }, {
+            "id" : "36",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2adf6a68-d02a-4f84-bf33-654883cf7aad"
+            },
+            "sourceId" : "28",
+            "destinationId" : "30",
+            "description" : "includes"
+          }, {
+            "id" : "35",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "f41518d7-1a14-4f38-a050-bc30514a96a1"
+            },
+            "sourceId" : "28",
+            "destinationId" : "29",
+            "description" : "includes"
+          }, {
+            "id" : "38",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "01bc2f95-b767-4de8-8836-a175ab273fe5"
+            },
+            "sourceId" : "28",
+            "destinationId" : "32",
+            "description" : "includes"
+          }, {
+            "id" : "37",
+            "tags" : "Relationship",
+            "properties" : {
+              "structurizr.dsl.identifier" : "1a29b777-8405-4fad-862f-8bd508b383a6"
+            },
+            "sourceId" : "28",
+            "destinationId" : "31",
+            "description" : "includes"
+          } ],
+          "group" : "Presentation",
+          "technology" : "Blazor",
+          "documentation" : { }
+        } ],
+        "documentation" : { }
+      }, {
+        "id" : "7",
+        "tags" : "Element,Container,external,admin",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.monitoring"
+        },
+        "name" : "Monitoring",
+        "technology" : "Application Insights",
+        "documentation" : { }
+      }, {
+        "id" : "6",
+        "tags" : "Element,Container,doc",
+        "properties" : {
+          "structurizr.dsl.identifier" : "softwaresystem.structurizr"
+        },
+        "name" : "Documentation",
+        "technology" : "Structurizr",
+        "documentation" : { }
+      } ],
+      "documentation" : { }
+    } ],
+    "deploymentNodes" : [ {
+      "id" : "75",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0"
+      },
+      "name" : "Developer Laptop",
+      "environment" : "Development",
+      "technology" : "Microsoft Windows 11",
+      "instances" : "1",
+      "children" : [ {
+        "id" : "78",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.5b74dedc-8566-4de1-a8e5-0fe2074d63cf"
+        },
+        "name" : "local",
+        "environment" : "Development",
+        "technology" : "Visual Studio",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "81",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.5b74dedc-8566-4de1-a8e5-0fe2074d63cf.developerapiapplicationinstance"
+          },
+          "relationships" : [ {
+            "id" : "88",
+            "sourceId" : "81",
+            "destinationId" : "86",
+            "description" : "read from",
+            "linkedRelationshipId" : "26"
+          }, {
+            "id" : "103",
+            "sourceId" : "81",
+            "destinationId" : "100",
+            "description" : "logs to",
+            "linkedRelationshipId" : "18"
+          } ],
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "10"
+        }, {
+          "id" : "79",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.5b74dedc-8566-4de1-a8e5-0fe2074d63cf.developerwebappinstance"
+          },
+          "relationships" : [ {
+            "id" : "94",
+            "sourceId" : "79",
+            "destinationId" : "91",
+            "description" : "Subscribes",
+            "linkedRelationshipId" : "70"
+          }, {
+            "id" : "98",
+            "sourceId" : "79",
+            "destinationId" : "97",
+            "description" : "embeds",
+            "linkedRelationshipId" : "45"
+          }, {
+            "id" : "93",
+            "sourceId" : "79",
+            "destinationId" : "91",
+            "description" : "Uses",
+            "linkedRelationshipId" : "69"
+          }, {
+            "id" : "82",
+            "sourceId" : "79",
+            "destinationId" : "81",
+            "description" : "requests from",
+            "linkedRelationshipId" : "42"
+          }, {
+            "id" : "102",
+            "sourceId" : "79",
+            "destinationId" : "100",
+            "description" : "logs to",
+            "linkedRelationshipId" : "34"
+          } ],
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "27"
+        }, {
+          "id" : "80",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.5b74dedc-8566-4de1-a8e5-0fe2074d63cf.developeradminappinstance"
+          },
+          "relationships" : [ {
+            "id" : "101",
+            "sourceId" : "80",
+            "destinationId" : "100",
+            "description" : "logs to",
+            "linkedRelationshipId" : "54"
+          }, {
+            "id" : "87",
+            "sourceId" : "80",
+            "destinationId" : "86",
+            "description" : "read from and writes to",
+            "linkedRelationshipId" : "62"
+          }, {
+            "id" : "92",
+            "sourceId" : "80",
+            "destinationId" : "91",
+            "description" : "Publishes",
+            "linkedRelationshipId" : "71"
+          } ],
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "46"
+        } ]
+      }, {
+        "id" : "83",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040"
+        },
+        "name" : "Docker Desktop",
+        "environment" : "Development",
+        "instances" : "1",
+        "children" : [ {
+          "id" : "95",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.4fde975e-06de-4b05-bbfd-e814155e6dec"
+          },
+          "name" : "Docker Container - Struturizr",
+          "environment" : "Development",
+          "technology" : "Docker",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "96",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.4fde975e-06de-4b05-bbfd-e814155e6dec.f7772b51-e814-4146-8842-2d32bb62bc48"
+            },
+            "name" : "Structurizr lite",
+            "environment" : "Development",
+            "technology" : "Java",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "97",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.4fde975e-06de-4b05-bbfd-e814155e6dec.f7772b51-e814-4146-8842-2d32bb62bc48.developerstructurizrinstance"
+              },
+              "environment" : "Development",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "6"
+            } ]
+          } ]
+        }, {
+          "id" : "89",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.501251f5-74cd-4209-a8b9-4cacfd0daae8"
+          },
+          "name" : "Docker Container - Cache",
+          "environment" : "Development",
+          "technology" : "Docker",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "90",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.501251f5-74cd-4209-a8b9-4cacfd0daae8.4809321d-265f-4f66-9e54-6e667c44f56d"
+            },
+            "name" : "Redis",
+            "environment" : "Development",
+            "technology" : "Redis",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "91",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.501251f5-74cd-4209-a8b9-4cacfd0daae8.4809321d-265f-4f66-9e54-6e667c44f56d.developerredisinstance"
+              },
+              "environment" : "Development",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "8"
+            } ]
+          } ]
+        }, {
+          "id" : "84",
+          "tags" : "Element,Deployment Node",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.92ebbd18-0258-4182-a940-d489d64a6d11"
+          },
+          "name" : "Docker Container - Database Server",
+          "environment" : "Development",
+          "technology" : "Docker",
+          "instances" : "1",
+          "children" : [ {
+            "id" : "85",
+            "tags" : "Element,Deployment Node",
+            "properties" : {
+              "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.92ebbd18-0258-4182-a940-d489d64a6d11.0e7f43be-71bf-4398-b76f-e7444bc88a2c"
+            },
+            "name" : "Database Server",
+            "environment" : "Development",
+            "technology" : "SQL",
+            "instances" : "1",
+            "containerInstances" : [ {
+              "id" : "86",
+              "tags" : "Container Instance",
+              "properties" : {
+                "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.6531ad21-9985-4297-a758-78457293a040.92ebbd18-0258-4182-a940-d489d64a6d11.0e7f43be-71bf-4398-b76f-e7444bc88a2c.developerdatabaseinstance"
+              },
+              "environment" : "Development",
+              "deploymentGroups" : [ "Default" ],
+              "instanceId" : 1,
+              "containerId" : "9"
+            } ]
+          } ]
+        } ]
+      }, {
+        "id" : "76",
+        "tags" : "Element,Deployment Node",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.18ff17ba-c51f-418c-90eb-353e6a6ad316"
+        },
+        "name" : "Web Browser",
+        "environment" : "Development",
+        "technology" : "Chrome, Firefox, Safari, or Edge",
+        "instances" : "1",
+        "containerInstances" : [ {
+          "id" : "77",
+          "tags" : "Container Instance",
+          "properties" : {
+            "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.18d4da42-96b2-4f02-9168-036c431b38f0.18ff17ba-c51f-418c-90eb-353e6a6ad316.developerdashboardinstance"
+          },
+          "environment" : "Development",
+          "deploymentGroups" : [ "Default" ],
+          "instanceId" : 1,
+          "containerId" : "5"
+        } ]
+      } ]
+    }, {
+      "id" : "104",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "e2cf5a50-df11-44b4-a5f6-ab595254e9d0.ebaf5020-82a8-484c-af29-5ffd7e25f9be"
+      },
+      "name" : "JSdotNet.Production",
+      "environment" : "Production",
+      "technology" : "Azure Resource Group",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "105",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e2cf5a50-df11-44b4-a5f6-ab595254e9d0.ebaf5020-82a8-484c-af29-5ffd7e25f9be.e811d2e1-1d6a-4c19-bdcd-8d4d0975304c"
+        },
+        "environment" : "Production",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "7"
+      } ]
+    }, {
+      "id" : "99",
+      "tags" : "Element,Deployment Node",
+      "properties" : {
+        "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.221f081c-45dd-4ffd-a339-af98d6415c0d"
+      },
+      "name" : "SdotNet.Development",
+      "environment" : "Development",
+      "technology" : "Azure Resource Group",
+      "instances" : "1",
+      "containerInstances" : [ {
+        "id" : "100",
+        "tags" : "Container Instance",
+        "properties" : {
+          "structurizr.dsl.identifier" : "2cea89ac-9a5c-4626-a4c4-371ef54200fe.221f081c-45dd-4ffd-a339-af98d6415c0d.07ef6a5d-21db-4043-bde4-9dfc3c37b375"
+        },
+        "environment" : "Development",
+        "deploymentGroups" : [ "Default" ],
+        "instanceId" : 1,
+        "containerId" : "7"
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "description" : "Level 1: A System Context diagram provides a starting point, showing how the software system in scope fits into the world around it.",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 2640,
+        "height" : 1500
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 370,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 370,
+        "y" : 900
+      }, {
+        "id" : "3",
+        "x" : 1820,
+        "y" : 600
+      }, {
+        "id" : "4",
+        "x" : 1070,
+        "y" : 600
+      } ],
+      "relationships" : [ {
+        "id" : "73"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "68"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "key" : "JSdotNet",
+      "order" : 2,
+      "description" : "Level 2: A Container diagram zooms into the software system in scope, showing the high-level technical building blocks.",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 3070,
+        "height" : 3445
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 1298
+      }, {
+        "id" : "46",
+        "x" : 900,
+        "y" : 2265
+      }, {
+        "id" : "2",
+        "x" : 200,
+        "y" : 2215
+      }, {
+        "id" : "3",
+        "x" : 1650,
+        "y" : 2944
+      }, {
+        "id" : "27",
+        "x" : 900,
+        "y" : 1348
+      }, {
+        "id" : "6",
+        "x" : 1650,
+        "y" : 219
+      }, {
+        "id" : "7",
+        "x" : 2400,
+        "y" : 1127
+      }, {
+        "id" : "8",
+        "x" : 1650,
+        "y" : 1727
+      }, {
+        "id" : "9",
+        "x" : 2400,
+        "y" : 2035
+      }, {
+        "id" : "10",
+        "x" : 1650,
+        "y" : 1127
+      } ],
+      "relationships" : [ {
+        "id" : "70",
+        "vertices" : [ {
+          "x" : 1432,
+          "y" : 1821
+        } ]
+      }, {
+        "id" : "72",
+        "vertices" : [ {
+          "x" : 1650,
+          "y" : 2823
+        } ]
+      }, {
+        "id" : "71"
+      }, {
+        "id" : "74"
+      }, {
+        "id" : "62",
+        "vertices" : [ {
+          "x" : 2100,
+          "y" : 2410
+        } ]
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "54",
+        "vertices" : [ {
+          "x" : 2100,
+          "y" : 2177
+        } ]
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "18"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "34",
+        "vertices" : [ {
+          "x" : 1650,
+          "y" : 977
+        }, {
+          "x" : 2100,
+          "y" : 977
+        } ]
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "69",
+        "vertices" : [ {
+          "x" : 1567,
+          "y" : 1553
+        } ]
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "ComponentsAdminApp",
+      "order" : 5,
+      "description" : "Level 3: A Component diagram zooms into an individual container, showing the components inside it.",
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : false
+      },
+      "containerId" : "46",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "47",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "48",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "7",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "50",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "51",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "52",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "relationships" : [ {
+        "id" : "61"
+      }, {
+        "id" : "60"
+      }, {
+        "id" : "53"
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "56"
+      }, {
+        "id" : "57"
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "59"
+      }, {
+        "id" : "49"
+      } ]
+    }, {
+      "key" : "ComponentsReaderApp",
+      "order" : 4,
+      "description" : "Level 3: A Component diagram zooms into an individual container, showing the components inside it.",
+      "dimensions" : {
+        "width" : 3329,
+        "height" : 3200
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "containerId" : "27",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "1",
+        "x" : 1764,
+        "y" : 200
+      }, {
+        "id" : "6",
+        "x" : 2489,
+        "y" : 2100
+      }, {
+        "id" : "28",
+        "x" : 1739,
+        "y" : 900
+      }, {
+        "id" : "29",
+        "x" : 239,
+        "y" : 1500
+      }, {
+        "id" : "7",
+        "x" : 989,
+        "y" : 2700
+      }, {
+        "id" : "30",
+        "x" : 989,
+        "y" : 1500
+      }, {
+        "id" : "31",
+        "x" : 1739,
+        "y" : 1500
+      }, {
+        "id" : "10",
+        "x" : 276,
+        "y" : 2100
+      }, {
+        "id" : "32",
+        "x" : 2489,
+        "y" : 1500
+      } ],
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "40"
+      }, {
+        "id" : "63"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "33",
+        "vertices" : [ {
+          "x" : 3089,
+          "y" : 1500
+        }, {
+          "x" : 3089,
+          "y" : 2400
+        } ]
+      }, {
+        "id" : "43"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "38"
+      } ]
+    }, {
+      "key" : "ComponentsApi",
+      "order" : 3,
+      "description" : "Level 3: A Component diagram zooms into an individual container, showing the components inside it.",
+      "dimensions" : {
+        "width" : 2415,
+        "height" : 3265
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "containerId" : "10",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 239,
+        "y" : 800
+      }, {
+        "id" : "12",
+        "x" : 239,
+        "y" : 1400
+      }, {
+        "id" : "14",
+        "x" : 472,
+        "y" : 2000
+      }, {
+        "id" : "15",
+        "x" : 472,
+        "y" : 2600
+      }, {
+        "id" : "16",
+        "x" : 1001,
+        "y" : 1400
+      }, {
+        "id" : "27",
+        "x" : 981,
+        "y" : 200
+      }, {
+        "id" : "7",
+        "x" : 1764,
+        "y" : 1400
+      }, {
+        "id" : "9",
+        "x" : 1764,
+        "y" : 2000
+      } ],
+      "relationships" : [ {
+        "id" : "17",
+        "vertices" : [ {
+          "x" : 1631,
+          "y" : 1296
+        } ]
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "24",
+        "vertices" : [ {
+          "x" : 1072,
+          "y" : 2300
+        } ]
+      }, {
+        "id" : "13"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "23",
+        "vertices" : [ {
+          "x" : 848,
+          "y" : 1750
+        } ]
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "22",
+        "vertices" : [ {
+          "x" : 1074,
+          "y" : 1949
+        } ]
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "19"
+      } ]
+    } ],
+    "dynamicViews" : [ {
+      "key" : "Caching",
+      "order" : 6,
+      "description" : "Summarises the publish subscribe through Redis cache.",
+      "dimensions" : {
+        "width" : 1851,
+        "height" : 2011
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "elementId" : "4",
+      "externalBoundariesVisible" : true,
+      "relationships" : [ {
+        "id" : "62",
+        "description" : "Update some data",
+        "order" : "1",
+        "response" : false
+      }, {
+        "id" : "71",
+        "description" : "Publishes to",
+        "order" : "2",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 281,
+          "y" : 819
+        }, {
+          "x" : 281,
+          "y" : 1119
+        } ]
+      }, {
+        "id" : "69",
+        "description" : "Subscribed to",
+        "order" : "3",
+        "response" : false
+      }, {
+        "id" : "42",
+        "description" : "Fetch more data",
+        "order" : "4",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1515,
+          "y" : 649
+        } ]
+      }, {
+        "id" : "26",
+        "description" : "reads from",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 891,
+          "y" : 557
+        } ]
+      }, {
+        "id" : "26",
+        "description" : "result",
+        "order" : "6",
+        "response" : true,
+        "vertices" : [ {
+          "x" : 1091,
+          "y" : 780
+        } ]
+      }, {
+        "id" : "42",
+        "description" : "response",
+        "order" : "7",
+        "response" : true,
+        "vertices" : [ {
+          "x" : 1217,
+          "y" : 688
+        } ]
+      } ],
+      "elements" : [ {
+        "id" : "46",
+        "x" : 277,
+        "y" : 219
+      }, {
+        "id" : "27",
+        "x" : 1181,
+        "y" : 819
+      }, {
+        "id" : "8",
+        "x" : 652,
+        "y" : 1419
+      }, {
+        "id" : "9",
+        "x" : 431,
+        "y" : 819
+      }, {
+        "id" : "10",
+        "x" : 1102,
+        "y" : 219
+      } ]
+    } ],
+    "deploymentViews" : [ {
+      "key" : "DevelopmentDeployment",
+      "order" : 7,
+      "description" : "Deployment for local development",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 3896,
+        "height" : 2454
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Development",
+      "elements" : [ {
+        "id" : "77",
+        "x" : 2429,
+        "y" : 240
+      }, {
+        "id" : "99",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "89",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "78",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "79",
+        "x" : 917,
+        "y" : 240
+      }, {
+        "id" : "100",
+        "x" : 3225,
+        "y" : 1590
+      }, {
+        "id" : "90",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "91",
+        "x" : 279,
+        "y" : 1590
+      }, {
+        "id" : "80",
+        "x" : 1667,
+        "y" : 240
+      }, {
+        "id" : "81",
+        "x" : 1667,
+        "y" : 840
+      }, {
+        "id" : "83",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "84",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "95",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "85",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "96",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "86",
+        "x" : 2221,
+        "y" : 1590
+      }, {
+        "id" : "97",
+        "x" : 1250,
+        "y" : 1590
+      }, {
+        "id" : "75",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "76",
+        "x" : 175,
+        "y" : 175
+      } ],
+      "relationships" : [ {
+        "id" : "93",
+        "vertices" : [ {
+          "x" : 687,
+          "y" : 1000
+        } ]
+      }, {
+        "id" : "82"
+      }, {
+        "id" : "94",
+        "vertices" : [ {
+          "x" : 958,
+          "y" : 1129
+        } ]
+      }, {
+        "id" : "92"
+      }, {
+        "id" : "87",
+        "vertices" : [ {
+          "x" : 1517,
+          "y" : 840
+        }, {
+          "x" : 1517,
+          "y" : 1244
+        }, {
+          "x" : 1879,
+          "y" : 1277
+        } ]
+      }, {
+        "id" : "98",
+        "vertices" : [ {
+          "x" : 1283,
+          "y" : 1244
+        } ]
+      }, {
+        "id" : "88"
+      }, {
+        "id" : "102",
+        "vertices" : [ {
+          "x" : 1517,
+          "y" : 644
+        }, {
+          "x" : 2267,
+          "y" : 840
+        }, {
+          "x" : 2850,
+          "y" : 1277
+        } ]
+      }, {
+        "id" : "101",
+        "vertices" : [ {
+          "x" : 2250,
+          "y" : 644
+        }, {
+          "x" : 2933,
+          "y" : 840
+        } ]
+      }, {
+        "id" : "103",
+        "vertices" : [ {
+          "x" : 2475,
+          "y" : 1244
+        }, {
+          "x" : 2850,
+          "y" : 1277
+        } ]
+      } ]
+    }, {
+      "key" : "ProductionDeployment",
+      "order" : 8,
+      "description" : "Deployment on Azure",
+      "softwareSystemId" : "4",
+      "dimensions" : {
+        "width" : 1020,
+        "height" : 811
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false,
+        "applied" : true
+      },
+      "environment" : "Production",
+      "elements" : [ {
+        "id" : "104",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "105",
+        "x" : 285,
+        "y" : 220
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Person",
+          "background" : "#4d7887",
+          "color" : "#ffffff",
+          "fontSize" : 22,
+          "shape" : "Person"
+        }, {
+          "tag" : "Software System",
+          "background" : "#c19f44",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Container",
+          "background" : "#c19f44",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "database",
+          "background" : "#4d7887",
+          "shape" : "Cylinder"
+        }, {
+          "tag" : "Component",
+          "background" : "#d04e3f",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "public",
+          "fontSize" : 22
+        }, {
+          "tag" : "external",
+          "background" : "#c2b39e",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "doc",
+          "background" : "#c2b39e",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "sql",
+          "background" : "#ff0000"
+        }, {
+          "tag" : "appinsights",
+          "background" : "#ff0000"
+        }, {
+          "tag" : "Failover",
+          "opacity" : 25
+        } ]
+      },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { },
+      "metadataSymbols" : "SquareBrackets",
+      "lastSavedView" : "SystemContext-001"
+    }
+  }
+}
