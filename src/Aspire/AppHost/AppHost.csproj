@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>9d964837-c20d-4fdc-9c77-106f78e4233f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Presentation\Api\Api.csproj" />
+    <ProjectReference Include="..\..\Presentation\Web\Presentation.Web.csproj" />
+  </ItemGroup>
+
+</Project>

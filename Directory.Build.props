@@ -1,0 +1,33 @@
+<Project>
+
+  <!-- Set the root namespace based on a prefix and the project name -->
+  <PropertyGroup>
+    <RootNamespace>JSdotNet.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Set the .Net framework, language version and project rules -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!--
+    This could be enabled to generate documentation files. Those files can then be used by Swagger.
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    -->
+  </PropertyGroup>
+
+  <!-- Set analyzer rules -->
+  <PropertyGroup>
+    <AnalysisLevel>8.0</AnalysisLevel>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <!-- Add additional analyzers -->
+  <ItemGroup>
+ 
+  </ItemGroup>
+</Project>

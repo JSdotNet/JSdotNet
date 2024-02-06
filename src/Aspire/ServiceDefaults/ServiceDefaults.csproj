@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>  
+    <IsAspireSharedProject>true</IsAspireSharedProject>  
+    <ApplicationInsightsResourceId>/subscriptions/4b2f19dd-b4b3-487c-a5c6-a996593ab8d2/resourceGroups/Develop/providers/microsoft.insights/components/Develop</ApplicationInsightsResourceId>  
+    <UserSecretsId>3b7275c9-f168-4a74-9bc8-116b35686bd4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" />
+
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+    <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.GrpcNetClient" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" />
+    <PackageReference Include="Azure.Monitor.OpenTelemetry.AspNetCore" />
+  </ItemGroup>
+
+</Project>
