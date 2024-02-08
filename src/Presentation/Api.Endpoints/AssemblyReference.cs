@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace SolutionTemplate.Presentation.Api;
+namespace JSdotNet.Api.Endpoints;
 
 public static class AssemblyReference
 {

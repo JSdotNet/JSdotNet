@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SolutionTemplate.Domain;
+﻿using JSdotNet.Domain.Abstractions.Data;
+
+using Microsoft.EntityFrameworkCore;
 
 namespace JSdotNet.Infrastructure.EF.Data;
 

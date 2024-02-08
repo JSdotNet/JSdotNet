@@ -6,16 +6,33 @@
 
 <PageTitle>Weather</PageTitle>
 
-<h1>Weather</h1>
+<FluentLabel Typo="Typography.PageTitle">Weather</FluentLabel>
 
-<p>This component demonstrates showing data loaded from a backend API service.</p>
+<FluentLabel>This component demonstrates showing data loaded from a backend API service.</FluentLabel>
 
-@if (forecasts == null)
+@if (_forecasts == null)
 {
-    <p><em>Loading...</em></p>
+    <FluentProgressRing>Loading...</FluentProgressRing>
 }
 else
 {
+    <FluentDataGrid Items="@_forecasts" ResizableColumns="true">
+        <PropertyColumn Title="Date" Property="@(c => c.Date.ToShortDateString())" Sortable="true" />
+        <PropertyColumn Title="Temp. (C)" Property="@(c => c.TemperatureC)" Sortable="true" />
+        <PropertyColumn Title="Temp. (F)" Property="@(c => c.TemperatureF)" Sortable="true" />
+        <TemplateColumn Title="Icon">
+            @if (context.TemperatureC > 21)
+            {
+                <FluentIcon Value="@(new Icons.Regular.Size24.WeatherSunnyHigh())" />
+            }
+            else
+            {
+                <FluentIcon Value="@(new Icons.Regular.Size24.TimeAndWeather())" />
+            }
+        </TemplateColumn>
+        <PropertyColumn Title="Summary" Property="@(c => c.Summary)" Sortable="true" />
+    </FluentDataGrid>
+
     <table class="table">
         <thead>
             <tr>
@@ -26,7 +43,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+            @foreach (var forecast in _forecasts)
             {
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
@@ -40,10 +57,11 @@ else
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private IQueryable<WeatherForecast>? _forecasts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await WeatherApi.GetWeatherAsync();
+        var result = await WeatherApi.GetWeatherAsync();
+        _forecasts = result.AsQueryable();
     }
 }

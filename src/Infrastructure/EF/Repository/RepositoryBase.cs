@@ -1,4 +1,5 @@
 ﻿using JSdotNet.Domain.Abstractions;
+using JSdotNet.Domain.Abstractions.Model;
 using JSdotNet.Infrastructure.EF.Data;
 using Microsoft.EntityFrameworkCore;
 

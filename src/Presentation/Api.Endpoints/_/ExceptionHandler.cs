@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 
 using ApplicationException = JSdotNet.Application._.Behaviors.ApplicationException;
 
-namespace SolutionTemplate.Presentation.Api._;
+namespace JSdotNet.Api.Endpoints.@_;
 
 internal sealed class ExceptionHandler(ILogger<ExceptionHandler> logger) : IExceptionHandler
 {

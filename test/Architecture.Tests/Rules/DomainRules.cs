@@ -2,6 +2,8 @@
 using System.Reflection;
 using JSdotNet.Architecture.Tests.Extensions;
 using JSdotNet.Domain.Abstractions;
+using JSdotNet.Domain.Abstractions.Model;
+
 using NetArchTest.Rules;
 
 namespace JSdotNet.Architecture.Tests.Rules;

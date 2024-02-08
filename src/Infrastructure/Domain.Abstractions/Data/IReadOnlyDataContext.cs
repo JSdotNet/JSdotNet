@@ -1,4 +1,4 @@
-﻿namespace SolutionTemplate.Domain;
+﻿namespace JSdotNet.Domain.Abstractions.Data;
 
 public interface IReadOnlyDataContext
 {

@@ -1,4 +1,4 @@
-namespace JSdotNet.Presentation.Web;
+namespace JSdotNet.Web;
 
 public class WeatherApiClient(HttpClient httpClient)
 {

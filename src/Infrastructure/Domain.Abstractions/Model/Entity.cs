@@ -1,6 +1,4 @@
-﻿using JSdotNet.Domain.Abstractions.Model;
-
-namespace JSdotNet.Domain.Abstractions;
+﻿namespace JSdotNet.Domain.Abstractions.Model;
 
 public abstract class Entity(Guid id) : IHasId
 {

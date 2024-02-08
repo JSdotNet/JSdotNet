@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Routing;
 
-namespace SolutionTemplate.Presentation.Api.Health;
+namespace JSdotNet.Api.Endpoints.Health;
 
 public static class HealthCheckExtensions
 {

@@ -1,8 +1,8 @@
-﻿using JSdotNet.Infrastructure.EF.Data;
+﻿using JSdotNet.Domain.Abstractions.Data;
+using JSdotNet.Infrastructure.EF.Data;
 using JSdotNet.Infrastructure.EF.Migrator;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SolutionTemplate.Domain;
 
 namespace JSdotNet.Infrastructure.EF;
 

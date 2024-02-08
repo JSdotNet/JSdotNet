@@ -1,6 +1,6 @@
 ﻿using JSdotNet.Domain.Abstractions.Events;
 
-namespace JSdotNet.Domain.Abstractions;
+namespace JSdotNet.Domain.Abstractions.Model;
 
 public abstract class AggregateRoot(Guid id) : AggregateRoot<Guid>(id);
 

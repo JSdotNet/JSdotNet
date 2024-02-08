@@ -12,7 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Presentation\Api\Api.csproj" />
-    <ProjectReference Include="..\..\Presentation\Web\Presentation.Web.csproj" />
+    <ProjectReference Include="..\..\Presentation\Web.Admin\Web.Admin.csproj" />
+    <ProjectReference Include="..\..\Presentation\Web\Web.csproj" />
   </ItemGroup>
 
 </Project>

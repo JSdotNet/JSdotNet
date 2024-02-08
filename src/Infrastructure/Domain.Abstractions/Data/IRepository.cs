@@ -1,4 +1,6 @@
-﻿namespace JSdotNet.Domain.Abstractions.Data;
+﻿using JSdotNet.Domain.Abstractions.Model;
+
+namespace JSdotNet.Domain.Abstractions.Data;
 
 public interface IRepository<TAggregate>
     where TAggregate : AggregateRoot

@@ -1,0 +1,108 @@
+﻿@page "/"
+
+<PageTitle>Dashboard</PageTitle>
+
+<FluentGrid Spacing="3" OnBreakpointEnter="@OnBreakpointEnterHandler" Justify="@JustifyContent.FlexStart" 
+    Style="background-color: var(--neutral-layer-3);">
+
+    <FluentGridItem xs="12" md="8">
+        <FluentCard>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </FluentCard>
+    </FluentGridItem>
+
+
+    <FluentGridItem md="4" HiddenWhen="GridItemHidden.SmAndDown">
+        <FluentCard>
+            @* Width="400px" Height="400px"  *@
+            <FluentLabel Typo="Typography.H3">Top 5: Most read Articles!</FluentLabel>
+
+            <ol>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+                <li>Article 4</li>
+                <li>Article 5</li>  
+            </ol>            
+        </FluentCard>
+    </FluentGridItem>
+
+    <FluentGridItem xs="12" md="8">
+        <FluentCard>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </FluentCard>
+    </FluentGridItem>
+
+    <FluentGridItem md="4" HiddenWhen="GridItemHidden.SmAndDown">
+        <FluentCard>
+            @* Width="400px" Height="400px"  *@
+            <FluentLabel Typo="Typography.H3">Top 5: Packages!</FluentLabel>
+
+            <ol>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+                <li>Article 4</li>
+                <li>Article 5</li>
+            </ol>
+        </FluentCard>
+    </FluentGridItem>
+
+    <FluentGridItem xs="12" sm="6" HiddenWhen="GridItemHidden.SmAndDown">
+        <div class="card">
+            xs="12" sm="6" Hidden="SmAndDown"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="12" sm="6">
+        <div class="card">
+            xs="12" sm="6"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="6" sm="3">
+        <div class="card">
+            xs="6" sm="3"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="6" sm="3">
+        <div class="card">
+            xs="6" sm="3"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="6" sm="3">
+        <div class="card">
+            xs="6" sm="3"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="6" sm="3">
+        <div class="card">
+            xs="6" sm="3"
+        </div>
+    </FluentGridItem>
+
+    <FluentGridItem xs="3">
+        <div class="card">
+            xs="3"
+        </div>
+    </FluentGridItem>
+</FluentGrid>
+
+
+@code {
+    void OnBreakpointEnterHandler(GridItemSize size)
+    {
+        Console.WriteLine($"Page Size: {size}");
+    }
+}

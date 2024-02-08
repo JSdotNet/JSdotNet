@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceDefaults", "src\Aspi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "src\Presentation\Api\Api.csproj", "{6C7B6A0F-BFCD-4306-919E-9CD401D987D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.Web", "src\Presentation\Web\Presentation.Web.csproj", "{F03EB8FF-7038-4D11-B427-406B9005876E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "src\Presentation\Web\Web.csproj", "{F03EB8FF-7038-4D11-B427-406B9005876E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9C4EB836-6992-41D8-B2A1-C54E34BC912C}"
 	ProjectSection(SolutionItems) = preProject
@@ -43,6 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{AFF52ACF-E2A
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 		shared.tmp = shared.tmp
+		structurizr.md = structurizr.md
 		doc\structurizr.properties = doc\structurizr.properties
 		doc\workspace.dsl = doc\workspace.dsl
 	EndProjectSection
@@ -74,6 +75,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.EF", "src\Infrastructure\EF\Infrastructure.EF.csproj", "{8A754ABB-EE1C-4D68-9241-01C023B18F42}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Endpoints", "src\Presentation\Api.Endpoints\Api.Endpoints.csproj", "{F3BA9394-1D34-4D49-8F20-3861AAE0190B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Admin", "src\Presentation\Web.Admin\Web.Admin.csproj", "{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,6 +140,10 @@ Global
 		{F3BA9394-1D34-4D49-8F20-3861AAE0190B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3BA9394-1D34-4D49-8F20-3861AAE0190B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3BA9394-1D34-4D49-8F20-3861AAE0190B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +171,7 @@ Global
 		{C4B0496B-A572-49D2-B42C-1F71F085A1A5} = {DC0E3061-5649-4787-98A2-553579B4E5BB}
 		{8A754ABB-EE1C-4D68-9241-01C023B18F42} = {C2080C63-1D25-4988-82C2-B04678D5C8EE}
 		{F3BA9394-1D34-4D49-8F20-3861AAE0190B} = {2A58BD73-F169-4DE4-985C-C9B3D488CB11}
+		{2FA4ACEF-A100-4C75-9AB1-7862C1BE7F23} = {2A58BD73-F169-4DE4-985C-C9B3D488CB11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8003828A-4503-48BD-9254-702134A0006A}

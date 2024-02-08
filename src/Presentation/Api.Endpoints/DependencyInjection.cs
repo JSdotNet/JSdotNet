@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using JSdotNet.Api.Endpoints._;
+using JSdotNet.Api.Endpoints.Health;
+using JSdotNet.Api.Endpoints.Middleware;
+
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using SolutionTemplate.Presentation.Api._;
-using SolutionTemplate.Presentation.Api.Health;
-using SolutionTemplate.Presentation.Api.Middleware;
-
-namespace SolutionTemplate.Presentation.Api;
+namespace JSdotNet.Api.Endpoints;
 
 public static class DependencyInjection
 {

@@ -18,6 +18,8 @@
     <!-- Application project -->
     <PackageVersion Include="MediatR" Version="12.2.0" />
     <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageVersion Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.3.1" />
+    <PackageVersion Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.4.0" />
     <!--TODO Try to make an abstraction so that EntityFrameworkCore is not needed in Application -->
     <!-- Infrastructure -->
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
@@ -33,6 +35,8 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />    
+    <PackageVersion Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.1" />
     <PackageVersion Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.1" />
     <!-- Infrastructure.EF.OutBox project -->

@@ -27,15 +27,18 @@ var cache = builder.AddRedisContainer("cache");
 var sql = builder.AddSqlServer("sql")
     .AddDatabase("sqldata");
 
-var apiservice = builder.AddProject<Projects.Api>("apiservice")   
+var apiservice = builder.AddProject<Projects.Api>("api")
     .WithReference(sql)
     .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
-builder.AddProject<Projects.Presentation_Web>("webfrontend")
+builder.AddProject<Projects.Web>("site")
     .WithReference(cache)
     .WithReference(apiservice)
     .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
+builder.AddProject<Projects.Web_Admin>("admin")
+    .WithReference(sql)
+    .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
 builder.Build().Run();
 

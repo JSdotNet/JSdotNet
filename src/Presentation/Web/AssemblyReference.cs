@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace JSdotNet.Presentation.Web;
+namespace JSdotNet.Web;
 
 public static class AssemblyReference
 {

@@ -1,9 +1,8 @@
 ﻿using JSdotNet.Application._.Messaging;
 using JSdotNet.Domain.Abstractions;
+using JSdotNet.Domain.Abstractions.Data;
 
 using MediatR;
-
-using SolutionTemplate.Domain;
 
 namespace JSdotNet.Application.@_.Behaviors;
 
