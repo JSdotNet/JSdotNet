@@ -1,14 +1,36 @@
-﻿@page "/Tech"
+﻿@page "/tech"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
 
 <PageTitle>Tools & Technologies</PageTitle>
 
-@for (var i = 0; i < 10; i++)
+@if (!_items.Any())
 {
-    <FluentCard>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </FluentCard>
+    <FluentProgressRing>Loading...</FluentProgressRing>
+}
+else
+{
+    @for (var i = 0; i < 10; i++)
+    {
+        <FluentCard>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </FluentCard>
+    }
+}
+
+
+@code {
+
+    private readonly IList<Tag> _items = new List<Tag>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(100);
+
+        _items.Add(Tool.Create("VS", "Visual Studio"));
+    }
 }

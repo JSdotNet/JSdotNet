@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Presentation\Api\Api.csproj" />
-    <ProjectReference Include="..\..\Presentation\Web.Admin\Web.Admin.csproj" />
-    <ProjectReference Include="..\..\Presentation\Web\Web.csproj" />
+    <ProjectReference Include="..\..\Presentation\Api\Api.csproj" AspireHostReference="true" />
+    <ProjectReference Include="..\..\Presentation\Web.Admin\Web.Admin.csproj" AspireHostReference="true" />    
+    <ProjectReference Include="..\..\Presentation\Web\Web.csproj" AspireHostReference="true" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using JSdotNet.Domain.Abstractions;
 using JSdotNet.Domain.Abstractions.Model;
 
 namespace JSdotNet.Domain.Models;
@@ -12,28 +11,58 @@ public sealed class Article : AggregateRoot
     private Article(Guid id) : base(id) { }
 
 
-    public DateTime CreatedAt { get; private init; } = DateTime.UtcNow;
-    public DateTime LastUpdated { get; private set; } = DateTime.UtcNow;
+    public DateOnly CreatedAt { get; private init; }
+    public DateOnly LastUpdated { get; private set; }
 
-    public string Title { get; private init; } = default!;
+    public string Title { get; private set; } = default!;
     public string Summary { get; private set; } = default!;
 
-    public string Route { get; private init; } = default!;
+    public string Route { get; private set; } = default!;
+    
 
 
+    private readonly List<TagKey> _tags = [];
+    public IReadOnlyList<TagKey> Tags => _tags.AsReadOnly();
 
-    private readonly List<string> _tags = [];
-    public IReadOnlyList<string> Tags => _tags.AsReadOnly();
+    // TODO Image?
+
+    public static Article Create(DateOnly createdAt, string title, string summary, string route, params TagKey[] tags)
+    {
+        var article = new Article(Guid.NewGuid())
+        {
+            CreatedAt = createdAt,
+            Title = title,
+            Summary = summary,
+            Route = route
+        };
+
+        article._tags.AddRange(tags);
+
+        return article;
+    }
+
+
+    public void Update(string title, string summary, string route, IEnumerable<TagKey> tags)
+    {
+        Title = title;
+        Summary = summary;
+        Route = route;
+
+        _tags.Clear();
+        _tags.AddRange(tags);
+
+        LastUpdated = DateOnly.FromDateTime(DateTime.Now);
+    }
 }
 
-
+public sealed record TagKey(TagType Type, string Value);
 
 [DebuggerDisplay("{Id}: {Title}")]
-public abstract class Tag : AggregateRoot<string>
+public abstract class Tag : AggregateRoot<TagKey>
 {
     protected Tag() : base(default!) { }
 
-    protected Tag(string value) : base(value) { }
+    protected Tag(TagKey value) : base(value) { }
 
     public TagType Type { get; private set; }
 }
@@ -48,7 +77,6 @@ public enum TagType
     DesignPattern,
     Principle,
     Practice,
-    Project
 }
 
 [DebuggerDisplay("{Id}")]
@@ -56,7 +84,26 @@ public sealed class Tool : Tag
 {
     private Tool() : base(default!) { }
 
-    private Tool(string value) : base(value) { }
+    private Tool(string value) : base(new TagKey(TagType.Tool, value)) { }
+
+    public string Name { get; private init; } = default!;
+    public string? Description { get; private init; } = default!;
+
+    private readonly List<TagKey> _tags = [];
+    public IReadOnlyList<TagKey> Tags => _tags.AsReadOnly();
+
+    public static Tool Create(string id, string name, string? description = null, params TagKey[] tags)
+    {
+        var result = new Tool(id)
+        {
+            Name = name,
+            Description = description
+        };
+
+        result._tags.AddRange(tags);
+
+        return result;
+    }
 
 }
 
@@ -66,7 +113,7 @@ public sealed class Skill : Tag
 {
     private Skill() : base(default!) { }
 
-    private Skill(string value) : base(value) { }
+    private Skill(string value) : base(new TagKey(TagType.Skill, value)) { }
 
 }
 
@@ -77,7 +124,7 @@ public sealed class DesignPattern : Tag
 {
     private DesignPattern() : base(default!) { }
 
-    private DesignPattern(string value) : base(value) { }
+    private DesignPattern(string value) : base(new TagKey(TagType.DesignPattern, value)) { }
 
 }
 
@@ -87,7 +134,7 @@ public sealed class Practice : Tag
 {
     private Practice() : base(default!) { }
 
-    private Practice(string value) : base(value) { }
+    private Practice(string value) : base(new TagKey(TagType.Practice, value)) { }
 
 }
 
@@ -98,7 +145,7 @@ public sealed class Principle : Tag
 {
     private Principle() : base(default!) { }
 
-    private Principle(string value) : base(value) { }
+    private Principle(string value) : base(new TagKey(TagType.Principle, value)) { }
 
 }
 
@@ -109,7 +156,7 @@ public sealed class Package : Tag
 {
     private Package() : base(default!) { }
 
-    private Package(string value) : base(value) { }
+    private Package(string value) : base(new TagKey(TagType.Package, value)) { }
 
     public string? Url { get; private init; }
 }
@@ -120,31 +167,31 @@ public sealed class Technology : Tag
 {
     private Technology() : base(default!) { }
 
-    private Technology(string value) : base(value) { }
+    private Technology(string value) : base(new TagKey(TagType.Technology, value)) { }
 
 }
 
 
+//[DebuggerDisplay("{Id}")]
+//public sealed class KnowledgeEvent : Tag
+//{
+//    private KnowledgeEvent() : base(default!) { }
+
+//    private KnowledgeEvent(string value) : base(new TagKey(TagType.KnowledgeEvent, value)) { }
+
+//    public DateOnly Start { get; set; }
+//    public DateOnly End { get; set; }
+
+//}
+
+
+
 [DebuggerDisplay("{Id}")]
-public sealed class KnowledgeEvent : Tag
-{
-    private KnowledgeEvent() : base(default!) { }
-
-    private KnowledgeEvent(string value) : base(value) { }
-
-    public DateOnly Start { get; set; }
-    public DateOnly End { get; set; }
-
-}
-
-
-
-[DebuggerDisplay("{Id}")]
-public sealed class Project : Tag
+public sealed class Project : AggregateRoot
 {
     private Project() : base(default!) { }
 
-    private Project(string value) : base(value) { }
+    private Project(Guid value) : base(value) { }
 
     public DateOnly Start { get; set; }
     public DateOnly End { get; set; }

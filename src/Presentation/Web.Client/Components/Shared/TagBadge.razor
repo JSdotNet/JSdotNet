@@ -1,0 +1,12 @@
+﻿@if (Value is not null)
+{
+    <a href="@($"{Value.Type}/{Value.Value}")">
+        <FluentBadge Appearance="Appearance.Accent">@($"{Value.Type}: {Value.Value}")</FluentBadge>
+    </a>
+}
+
+@code
+{
+    [Parameter]
+    public TagKey? Value { get; set; }
+}

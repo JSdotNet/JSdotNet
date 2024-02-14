@@ -3,6 +3,8 @@
     <PackageReference Include="NetArchTest.Rules" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Aspire\AppHost\AppHost.csproj" />
+    <ProjectReference Include="..\..\src\Presentation\Api\Api.csproj" />
+    <ProjectReference Include="..\..\src\Presentation\Web.Admin\Web.Admin.csproj" />
+    <ProjectReference Include="..\..\src\Presentation\Web\Web.csproj" />
   </ItemGroup>
 </Project>

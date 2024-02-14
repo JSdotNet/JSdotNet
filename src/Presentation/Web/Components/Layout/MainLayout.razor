@@ -1,4 +1,9 @@
 ﻿@inherits LayoutComponentBase
+@inject IWebHostEnvironment Env
+
+@using Microsoft.AspNetCore.Hosting;
+@using Microsoft.Extensions.Hosting;
+
 
 <FluentLayout>
     <FluentHeader>
@@ -14,8 +19,19 @@
         </FluentBodyContent>
     </FluentStack>
 
-    <FluentFooter>
-        Experimenting with Blazor development         
+    <FluentFooter>   
+        <div style="display: flex; width=100%">
+            <FluentLabel Typo="Typography.H6">Experimenting with Blazor development</FluentLabel>
+            <FluentSpacer />
+            @if (Env.IsDevelopment())
+            {
+                <FluentLabel Typo="Typography.H6">Develop</FluentLabel>
+            }  
+            @if (Env.IsStaging())
+            {
+                <FluentLabel Typo="Typography.H6">Staging</FluentLabel>
+            }
+        </div>
     </FluentFooter>
 </FluentLayout>
 

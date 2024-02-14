@@ -1,14 +1,78 @@
-﻿@page "/Blog"
+﻿@page "/articles"
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+@using JSdotNet.Domain.Models
 
 <PageTitle>Articles</PageTitle>
 
-@for (var i = 0; i < 10; i++)
+@if (!_articles.Any())
 {
-    <FluentCard>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </FluentCard>
+    <FluentProgressRing>Loading...</FluentProgressRing>
+}
+else
+{
+    <FluentStack Orientation="@Orientation.Vertical" >
+        <FluentSearch @ref=_searchTest 
+                      @bind-Value="@_searchValue"
+                      @bind-Value:after=HandleSearchInput
+                      Placeholder="Search" />
+
+        @foreach (var article in _searchResult.OrderByDescending(a => a.CreatedAt))
+        {
+            <JSdotNet.Web.Client.Components.Blog.ArticleSummary Article="@article" />         
+        }    
+    </FluentStack>
+}
+
+@code {
+    FluentSearch? _searchTest;
+    string? _searchValue = string.Empty;
+
+    private readonly IList<Article> _articles = new List<Article>();
+
+    private IList<Article> _searchResult = new List<Article>();
+
+    void HandleSearchInput()
+    {
+        if (string.IsNullOrWhiteSpace(_searchValue))
+        {
+            _searchResult = _articles;
+            _searchValue = string.Empty;
+        }
+        else
+        {
+            var searchTerm = _searchValue.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                var temp = _articles.Where(str => str.Title.ToLower().Contains(searchTerm)).ToList();
+                if (temp.Any())
+                {
+                    _searchResult = temp;
+                }
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+
+        // TODO May be interesting to yield return the result
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 05), "Article 1", Lorem, "article1", new TagKey(TagType.Tool, "VS")));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 07), "Article 2", Lorem, "article2", new TagKey(TagType.Tool, "VS")));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 08), "Article 3", Lorem, "article3"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 10), "Article 4", Lorem, "article4"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 15), "Article 5", Lorem, "article5"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 16), "Article 6", Lorem, "article6"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 17), "Article 7", Lorem, "article7"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 18), "Article 8", Lorem, "article8"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 19), "Article 9", Lorem, "article9"));
+        _articles.Add(Article.Create(new DateOnly(2024, 01, 20), "Article 10", Lorem, "article10"));
+
+        HandleSearchInput();
+    }
+
+    private const string Lorem = "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 }

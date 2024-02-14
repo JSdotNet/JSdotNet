@@ -4,11 +4,45 @@
 
 <FluentLabel Typo="Typography.PageTitle">About</FluentLabel>
 
-<FluentPersona Name="Job Schepers" Style="height:200px;"
-               Status="PresenceStatus.Unknown"
-               StatusSize="PresenceBadgeSize.Large"
-               Initials="JS"
-               StatusTitle="He is available"
-               @* Image="@DataSource.SamplePicture" *@
-               ImageSize="50px">
-</FluentPersona>
+<FluentStack Orientation="@Orientation.Horizontal" HorizontalAlignment="HorizontalAlignment.Right">
+    <FluentCard>
+        <FluentPersona Name="Job Schepers" 
+                      Style="height:200px;"
+                      @*  Status="PresenceStatus.Unknown"
+                       StatusSize="PresenceBadgeSize.Large" *@
+                       Initials="JS"
+                       @* StatusTitle="He is available" *@
+                       Image="https://media.licdn.com/dms/image/C4D03AQEI0FiLi3494w/profile-displayphoto-shrink_200_200/0/1607953345318?e=1712793600&v=beta&t=lTRBqXI3WRNbGuLDZ0Jb9EvzM687lCNKV4pZ_JbnGRU"
+                       ImageSize="100px">    
+            <FluentLabel Typo="Typography.Subject">Job Schepers</FluentLabel>
+            <p><a href="https://www.linkedin.com/in/job-schepers-35677b20/" target="_blank">LinkedIn</a></p>
+            <p><a href="https://github.com/JSdotNet" target="_blank" >GitHub</a></p>
+        </FluentPersona>
+    </FluentCard>
+
+    <FluentCard>
+        <FluentLabel Typo="Typography.H2">Contact</FluentLabel>
+        <FluentTextField Label="First Name" @bind-Value="@FirstName" />
+        <FluentTextField Label="Last Name" @bind-Value="@LastName" />
+        <FluentTextField Label="Email" @bind-Value="@Email" />
+        <FluentTextArea Label="Message:" @bind-Value=@Message />
+        <FluentButton Appearance="Appearance.Accent" OnClick="@SubmitForm">Submit</FluentButton>
+    </FluentCard>
+
+</FluentStack>
+
+
+
+
+
+@code {
+    private string? FirstName { get; set; }
+    private string? LastName { get; set; }
+    private string? Email { get; set; }
+    private string? Message { get; set; }
+
+    private void SubmitForm()
+    {
+        // Handle form submission here
+    }
+}

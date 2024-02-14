@@ -1,4 +1,4 @@
-﻿@rendermode InteractiveServer
+﻿@rendermode InteractiveWebAssembly
 
 <div class="navmenu">
     <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon" />
@@ -6,18 +6,18 @@
     <nav class="sitenav" aria-labelledby="main-menu" onclick="document.getElementById('navmenu-toggle').click();">
         <FluentNavMenu Id="main-menu" Collapsible="true" Width="250" Title="Navigation menu" @bind-Expanded="_expanded">
             <FluentNavLink Icon="@(new Icons.Regular.Size20.Board())" Href="/" Match="NavLinkMatch.All">Dashboard</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.NotepadPerson())" Href="/DevOps">DevOps</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.Layer())" Href="/Architecture">Architecture</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.NotepadPerson())" Href="/devops">DevOps</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.Layer())" Href="/architecture">Architecture</FluentNavLink>
             <FluentNavLink Icon="@(new Icons.Regular.Size20.Apps())" Href="/ddd">DDD</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/Security">Security</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/security">Security</FluentNavLink>
 
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/Blog" >Blog</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/Experience">Experience</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/Tech">Tools & Technologies</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/articles">Blog</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/experience">Experience</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.VideoSecurity())" Href="/tech">Tools & Technologies</FluentNavLink>
 
             <FluentNavLink Icon="@(new Icons.Regular.Size20.AddSquare())" Href="/Counter">Counter</FluentNavLink>
             <FluentNavLink Icon="@(new Icons.Regular.Size20.WeatherThunderstorm())" Href="/Weather">Weather</FluentNavLink>
-            <FluentNavLink Icon="@(new Icons.Regular.Size20.NotepadPerson())" Href="/About">About</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size20.NotepadPerson())" Href="/about">About</FluentNavLink>
         </FluentNavMenu>
     </nav>
 </div>
@@ -26,4 +26,3 @@
     private bool _expanded = true;
   
 }
-

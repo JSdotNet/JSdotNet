@@ -10,7 +10,7 @@ builder.AddContainer("structurizr", "structurizr/lite")  // Alternative docker i
     //.WithEnvironment("structurizr.autoRefreshInterval", "2000")
     //.WithEnvironment("structurizr.autoSaveInterval", "5000")
     //.WithEnvironment("structurizr.darkMode", "2000")
-    .WithServiceBinding(containerPort: 8080, hostPort: 8080, name: "structurizr-http", scheme: "http");
+    .WithEndpoint(containerPort: 8080, hostPort: 6060, name: "structurizr-http", scheme: "http");
 
 //var grafana = builder.AddContainer("grafana", "grafana/grafana")
 //    .WithVolumeMount("../grafana/config", "/etc/grafana")
@@ -19,7 +19,7 @@ builder.AddContainer("structurizr", "structurizr/lite")  // Alternative docker i
 
 //builder.AddProject("test", t => t)
 //builder.Services.AddHttpClient("Application Insights",
-//    static client => client.BaseAddress = new("https://portal.azure.com/#@innovadis.com/resource/subscriptions/4b2f19dd-b4b3-487c-a5c6-a996593ab8d2/resourcegroups/Develop/providers/microsoft.insights/components/Develop/overview"));
+//    static client => client.BaseAddress = new("https://portal.azure.com/...")
 
 
 var cache = builder.AddRedisContainer("cache");
@@ -27,16 +27,19 @@ var cache = builder.AddRedisContainer("cache");
 var sql = builder.AddSqlServer("sql")
     .AddDatabase("sqldata");
 
-var apiservice = builder.AddProject<Projects.Api>("api")
-    .WithReference(sql)
-    .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
+var apiservice = //builder.AddProject<ProjectsFix.Api>("api")
+    builder.AddProject("api", "../../Presentation/Api/Api.csproj")
+        .WithReference(sql)
+        .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
-builder.AddProject<Projects.Web>("site")
+//builder.AddProject<Projects.Web>("site")
+builder.AddProject("site", "../../Presentation/Web/Web.csproj")
     .WithReference(cache)
     .WithReference(apiservice)
     .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
-builder.AddProject<Projects.Web_Admin>("admin")
+//builder.AddProject<Projects.Web_Admin>("admin")
+builder.AddProject("admin", "../../Presentation/Web.Admin/Web.Admin.csproj")
     .WithReference(sql)
     .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 

@@ -1,0 +1,12 @@
+﻿@if (Items is not null)
+{
+    @foreach (var tag in Items)
+    {
+        <Tag Value="@tag" />
+    }
+}
+
+@code {
+    [Parameter]
+    public IReadOnlyList<TagKey>? Items { get; set; }
+}

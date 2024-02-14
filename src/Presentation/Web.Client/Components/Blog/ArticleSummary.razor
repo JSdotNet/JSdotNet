@@ -1,0 +1,24 @@
+﻿
+@if (Article is not null)
+{
+    <FluentCard>
+        <div style="display: flex; width=100%">
+            <a href="articles/@Article.Route">
+                <FluentLabel Typo="Typography.H3">@Article.Title</FluentLabel>
+            </a>
+            <FluentSpacer />
+            <FluentLabel Typo="Typography.H4">@Article.CreatedAt.ToString("D")</FluentLabel>
+        </div>
+        <p>@((MarkupString)Article.Summary)</p>
+
+        @foreach (var tag in Article.Tags)
+        {
+            <FluentBadge Appearance="Appearance.Accent">@($"{tag.Type}: {tag.Value}")</FluentBadge>
+        }
+    </FluentCard>
+}
+
+@code {
+    [Parameter]
+    public Article? Article { get; init; }
+}
