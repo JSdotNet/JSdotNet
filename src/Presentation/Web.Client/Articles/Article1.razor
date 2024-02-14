@@ -1,13 +1,16 @@
 ﻿@page "/articles/article1"
 
+<p>This is a client side article, with some interactivity</p>
 
-<ArticleContent Article="@_article">
+<JSdotNet.Web.Client.Pages.Counter />
+
+@* <ArticleContent Article="@_article">
     <p>This is a client side article, with some interactivity</p>
 
     <JSdotNet.Web.Client.Pages.Counter />
 </ArticleContent>
-
-
+ *@
+@* 
 @code {
     private Article? _article { get; set; }
 
@@ -20,3 +23,4 @@
 
     private const string Lorem = "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 }
+ *@

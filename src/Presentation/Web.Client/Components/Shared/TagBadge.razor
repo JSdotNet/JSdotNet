@@ -1,6 +1,6 @@
 ﻿@if (Value is not null)
 {
-    <a href="@($"{Value.Type}/{Value.Value}")">
+    <a href="@($"tech/{Value.Type.ToString().ToLower()}/{Value.Value}")">
         <FluentBadge Appearance="Appearance.Accent">@($"{Value.Type}: {Value.Value}")</FluentBadge>
     </a>
 }

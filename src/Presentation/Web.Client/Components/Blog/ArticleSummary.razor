@@ -3,7 +3,7 @@
 {
     <FluentCard>
         <div style="display: flex; width=100%">
-            <a href="articles/@Article.Route">
+            <a href="articles/@Article.Id">
                 <FluentLabel Typo="Typography.H3">@Article.Title</FluentLabel>
             </a>
             <FluentSpacer />
@@ -11,10 +11,7 @@
         </div>
         <p>@((MarkupString)Article.Summary)</p>
 
-        @foreach (var tag in Article.Tags)
-        {
-            <FluentBadge Appearance="Appearance.Accent">@($"{tag.Type}: {tag.Value}")</FluentBadge>
-        }
+        <Tags Items="@Article.Tags" />
     </FluentCard>
 }
 

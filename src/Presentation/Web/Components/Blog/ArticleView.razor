@@ -1,25 +1,52 @@
-﻿@page "/articles/{id}"
+﻿@page "/articles/{Id}"
+@using JSdotNet.Web.Client.Components.Blog
+@using JSdotNet.Web.Data
 
+<ArticleContent Article="@_article">
+   
+    @if (_article is not null && _type is not null)
+    {
+        @if (_type is null)
+        {
+            <p>Article not found!</p>
+        }
+        else
+        {
+            <DynamicComponent Type="@_type" Parameters="@_parameters" />
+        }
+    }
 
-<ArticleView Article="@_article">
-    <p>This is a client side article, with some interactivity</p>
-
-    <JSdotNet.Web.Client.Pages.Counter />
-
-    @* <DynamicComponent  *@
-
-</ArticleView>
+</ArticleContent>
 
 
 @code {
+    [Parameter]
+    public string? Id { get; set; }
+
     private Article? _article { get; set; }
+    private Type? _type;
+    private Dictionary<string, object> _parameters { get; set; } = [];
 
     protected override Task OnInitializedAsync()
     {
-        _article = Article.Create(new DateOnly(2024, 01, 05), "Article 1", Lorem, "article1", new TagKey(TagType.Tool, "VS"));
+        if (Guid.TryParse(Id, out Guid id))
+        {
+            _article = TestData.GetArticles().FirstOrDefault(); // TODO Match on ID
+
+            // _parameters = new Dictionary<string, object>
+            // {
+            //     { "Article", _article! }
+            // };
+         
+            // TODO Get namespace from AssemblyReference
+            _type = Type.GetType
+            (
+                $"JSdotNet.Web.Client.Articles.{_article!.Route}, {AssemblyReference.Assembly.GetName()}",
+                assembly => AssemblyReference.Assembly,
+                null
+            );
+        }
 
         return Task.CompletedTask;
     }
-
-    private const string Lorem = "<b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 }
