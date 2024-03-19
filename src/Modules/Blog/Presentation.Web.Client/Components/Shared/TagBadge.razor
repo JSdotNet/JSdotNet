@@ -1,0 +1,13 @@
+﻿@using JSdotNet.Blog.Domain.Models
+@if (Value is not null)
+{
+    <a href="@($"tech/{Value.Type.ToString().ToLower()}/{Value.Value}")">
+        <FluentBadge Appearance="Appearance.Accent">@($"{Value.Type}: {Value.Value}")</FluentBadge>
+    </a>
+}
+
+@code
+{
+    [Parameter]
+    public TagKey? Value { get; set; }
+}

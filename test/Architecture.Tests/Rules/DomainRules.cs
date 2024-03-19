@@ -1,8 +1,7 @@
 ﻿using System.Globalization;
 using System.Reflection;
 using JSdotNet.Architecture.Tests.Extensions;
-using JSdotNet.Domain.Abstractions;
-using JSdotNet.Domain.Abstractions.Model;
+using JSdotNet.Common.Domain.Model;
 
 using NetArchTest.Rules;
 

@@ -1,0 +1,13 @@
+﻿@using JSdotNet.Blog.Domain.Models
+@if (Items is not null)
+{
+    @foreach (var tag in Items)
+    {
+        <TagBadge Value="@tag" />
+    }
+}
+
+@code {
+    [Parameter]
+    public IReadOnlyList<TagKey>? Items { get; set; }
+}

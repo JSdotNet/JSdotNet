@@ -1,0 +1,22 @@
+﻿@page "/counter2"
+@rendermode InteractiveWebAssembly
+@inject ILogger<Counter> Logger
+
+<PageTitle>Counter</PageTitle>
+
+<FluentLabel Typo="Typography.PageTitle">Counter</FluentLabel>
+
+<p role="status">Current count: <FluentBadge Appearance="Appearance.Neutral">@currentCount</FluentBadge></p>
+
+<FluentButton Appearance="Appearance.Accent" @onclick="IncrementCount">Click me</FluentButton>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+
+        Logger.LogInformation("Counter clicked. Current count: {currentCount}", currentCount);
+    }
+}

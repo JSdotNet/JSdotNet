@@ -27,21 +27,21 @@ var cache = builder.AddRedisContainer("cache");
 var sql = builder.AddSqlServer("sql")
     .AddDatabase("sqldata");
 
-var apiservice = //builder.AddProject<ProjectsFix.Api>("api")
-    builder.AddProject("api", "../../Presentation/Api/Api.csproj")
-        .WithReference(sql)
-        .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
+//var apiservice = //builder.AddProject<ProjectsFix.Api>("api")
+//    builder.AddProject("api", "../../Presentation/Api/Api.csproj")
+//        .WithReference(sql)
+//        .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
-//builder.AddProject<Projects.Web>("site")
-builder.AddProject("site", "../../Presentation/Web/Web.csproj")
+builder.AddProject<Projects.Host>("site")
     .WithReference(cache)
-    .WithReference(apiservice)
+    .WithReference(sql)
+    //.WithReference(apiservice)
     .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
 //builder.AddProject<Projects.Web_Admin>("admin")
-builder.AddProject("admin", "../../Presentation/Web.Admin/Web.Admin.csproj")
-    .WithReference(sql)
-    .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
+//builder.AddProject("admin", "../../Presentation/Web.Admin/Web.Admin.csproj")
+//    .WithReference(sql)
+//    .WithEnvironment("APPLICATIONINSIGHTS_CONNECTION_STRING", appInsightsConnectionString);
 
 builder.Build().Run();
 

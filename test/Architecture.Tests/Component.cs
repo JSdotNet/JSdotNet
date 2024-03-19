@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using JSdotNet.Api;
+using JSdotNet.Blog.Domain;
 
 namespace JSdotNet.Architecture.Tests;
 
@@ -28,7 +28,7 @@ internal static class Component
     ];
 
 
-    internal static Assembly DomainAssembly => Domain.AssemblyReference.Assembly;
+    internal static Assembly DomainAssembly => AssemblyReference.Assembly;
 
     //internal static string[]? DomainAbstractionAssemblies => null;
     ////{

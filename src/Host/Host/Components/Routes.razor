@@ -1,0 +1,7 @@
+﻿@using AssemblyReference = JSdotNet.Host.AssemblyReference
+<Router AppAssembly="@AssemblyReference.Assembly" AdditionalAssemblies="@AssemblyReference.AdditionalAssemblies">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+</Router>

@@ -3,8 +3,16 @@
     <PackageReference Include="NetArchTest.Rules" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Presentation\Api\Api.csproj" />
-    <ProjectReference Include="..\..\src\Presentation\Web.Admin\Web.Admin.csproj" />
-    <ProjectReference Include="..\..\src\Presentation\Web\Web.csproj" />
+    <ProjectReference Include="..\..\src\Host\Host_broken.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FluentAssertions.Analyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="xunit.analyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

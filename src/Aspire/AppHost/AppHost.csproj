@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Presentation\Api\Api.csproj" AspireHostReference="true" />
-    <ProjectReference Include="..\..\Presentation\Web.Admin\Web.Admin.csproj" AspireHostReference="true" />    
-    <ProjectReference Include="..\..\Presentation\Web\Web.csproj" AspireHostReference="true" />
+    <ProjectReference Include="..\..\Host\Host\Host.csproj" />
   </ItemGroup>
 
 </Project>

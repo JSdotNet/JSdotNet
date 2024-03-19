@@ -1,0 +1,22 @@
+﻿@using JSdotNet.Blog.Domain.Models
+
+@if (Article is not null && ChildContent is not null)
+{
+    <FluentCard>
+        <FluentLabel Typo="Typography.H3">@Article.Title</FluentLabel>
+    
+        @ChildContent
+
+        <Tags Items="@Article.Tags"></Tags>
+    </FluentCard>
+}
+
+
+
+@code {
+    [Parameter]
+    public Article? Article { get; init; }
+
+    [Parameter] 
+    public RenderFragment? ChildContent { get; set; }
+}

@@ -1,0 +1,69 @@
+﻿@page "/articles"
+@using JSdotNet.Blog.Domain.Models
+@using JSdotNet.Blog.Presentation.Web.Data
+@attribute [StreamRendering(true)]
+@attribute [OutputCache(Duration = 5)]
+
+<PageTitle>Articles</PageTitle>
+
+@if (!_articles.Any())
+{
+    <FluentProgressRing>Loading...</FluentProgressRing>
+}
+else
+{
+    <FluentStack Orientation="@Orientation.Vertical" >
+        <FluentSearch @ref=_searchTest 
+                      @bind-Value="@_searchValue"
+                      @bind-Value:after=HandleSearchInput
+                      Placeholder="Search" />
+
+        @foreach (var article in _searchResult.OrderByDescending(a => a.CreatedAt))
+        {
+            <JSdotNet.Blog.Presentation.Web.Client.Components.Blog.ArticleSummary Article="@article" />
+        }    
+    </FluentStack>
+}
+
+@code {
+    FluentSearch? _searchTest;
+    string? _searchValue = string.Empty;
+
+    private readonly List<Article> _articles = [];
+
+    private IList<Article> _searchResult = new List<Article>();
+
+    void HandleSearchInput()
+    {
+        if (string.IsNullOrWhiteSpace(_searchValue))
+        {
+            _searchResult = _articles;
+            _searchValue = string.Empty;
+        }
+        else
+        {
+            var searchTerm = _searchValue.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                var temp = _articles.Where(str => str.Title.ToLower().Contains(searchTerm)).ToList();
+                if (temp.Any())
+                {
+                    _searchResult = temp;
+                }
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+
+        // TODO May be interesting to yield return the result
+        _articles.AddRange(TestData.GetArticles());
+
+        HandleSearchInput();
+
+        //StateHasChanged();
+    }
+}

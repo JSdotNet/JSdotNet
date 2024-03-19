@@ -1,0 +1,54 @@
+﻿@page "/articles/{Id}"
+@using JSdotNet.Blog.Presentation.Web.Client.Components.Blog
+@using JSdotNet.Blog.Domain.Models
+@using JSdotNet.Blog.Presentation.Web.Client
+@using JSdotNet.Blog.Presentation.Web.Data
+
+<ArticleContent Article="@_article">
+   
+    @if (_article is not null && _type is not null)
+    {
+        @if (_type is null)
+        {
+            <p>Article not found!</p>
+        }
+        else
+        {
+            <DynamicComponent Type="@_type" Parameters="@_parameters" />
+        }
+    }
+
+</ArticleContent>
+
+
+@code {
+    [Parameter]
+    public string? Id { get; set; }
+
+    private Article? _article { get; set; }
+    private Type? _type;
+    private Dictionary<string, object> _parameters { get; set; } = [];
+
+    protected override Task OnInitializedAsync()
+    {
+        if (Guid.TryParse(Id, out Guid id))
+        {
+            _article = TestData.GetArticles().FirstOrDefault(); // TODO Match on ID
+
+            // _parameters = new Dictionary<string, object>
+            // {
+            //     { "Article", _article! }
+            // };
+         
+            // TODO Get namespace from AssemblyReference
+            _type = Type.GetType
+            (
+                $"JSdotNet.Blog.Presentation.Web.Client.Articles.{_article!.Route}, {AssemblyReference.Assembly.GetName()}",
+                assembly => AssemblyReference.Assembly,
+                null
+            );
+        }
+
+        return Task.CompletedTask;
+    }
+}
