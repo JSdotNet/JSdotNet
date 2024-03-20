@@ -12,8 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.WebHost.UseKestrelHttpsConfiguration(); // TODO Is this a service default?
 
 // Add service defaults & Aspire components.
-builder.AddServiceDefaults();
-builder.AddRedisOutputCache("cache");
+//builder.AddServiceDefaults();
+//builder.AddRedisOutputCache("cache");
 
 // WEB
 // Add services to the container.
@@ -61,14 +61,51 @@ else
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.UseOutputCache();
+//app.UseOutputCache();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(JSdotNet.Host.AssemblyReference.AdditionalAssemblies);
 
+
+var blogModule = "/blog"; // TODO Forward to module
+app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments(blogModule, StringComparison.OrdinalIgnoreCase), first =>
+{
+    first.UseBlazorFrameworkFiles(blogModule);
+    first.UseStaticFiles();
+    first.UseStaticFiles(blogModule);
+    first.UseRouting();
+
+    first.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers(); // TODO Replace with Endpoints
+        endpoints.MapFallbackToFile("{blogModule}/{*path:nonfile}", $"{blogModule}/index.html"); // TODO ...
+    });
+});
+
+//app.MapWhen(ctx => ctx.Request.Path.StartsWithSegments("/SecondApp",
+//    StringComparison.OrdinalIgnoreCase), second =>
+//{
+//    second.UseBlazorFrameworkFiles("/SecondApp");
+//    second.UseStaticFiles();
+//    second.UseStaticFiles("/SecondApp");
+//    second.UseRouting();
+
+//    second.UseEndpoints(endpoints =>
+//    {
+//        endpoints.MapControllers();
+//        endpoints.MapFallbackToFile("/SecondApp/{*path:nonfile}",
+//            "SecondApp/index.html");
+//    });
+//});
+
 // TODO Module endpoints + connection from client project
-app.MapDefaultEndpoints();
+//app.MapDefaultEndpoints();
 
 app.Run();
+
+
+// TODO ???
+// - https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/multiple-hosted-webassembly?view=aspnetcore-7.0&pivots=route-subpath
+// - https://gorillalogic.com/blog/four-micro-frontend-architecture-types-you-can-implement-with-blazor
