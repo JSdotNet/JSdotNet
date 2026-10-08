@@ -2,7 +2,7 @@
 
 > **Architect brain, developer hands.**
 
-On this GitHub, I build practical developer tooling around .NET, Copilot, and architecture workflows. Most of my work is about turning complex ideas into reusable building blocks: MCP servers, agent/instruction/skill packs, and experiments that shorten feedback loops and improve day-to-day engineering.
+I build practical developer tooling around .NET, AI coding agents, and architecture workflows. Right now that means a spec-driven delivery stack for **Claude Code and GitHub Copilot** — plugins, flows, and scheduled routines that keep AI output aligned with architecture — and the products I build with it.
 
 Here on GitHub, I intentionally build many of my own tools and workflows instead of only adopting what already exists, because building is how I learn fastest and understand trade-offs deeply. This is my learning sandbox approach, not a one-size-fits-all rule for customer projects.
 
@@ -10,7 +10,7 @@ Here on GitHub, I intentionally build many of my own tools and workflows instead
 
 - .NET + Aspire systems that stay maintainable after release day
 - Domain-Driven Design and modular monoliths with clear boundaries
-- GitHub Copilot workflows with reusable agents, instructions, and skills
+- AI delivery workflows for Claude Code and GitHub Copilot: reusable agents, skills, and flows, authored once for both hosts
 - Architecture and quality guardrails that teams can actually use
 
 ## How I Work
@@ -19,113 +19,104 @@ I have been building software for 20+ years, and I still prefer practical engine
 
 > **Measure twice, implement once.**
 
-My default approach is practical and explicit:
+These days agents write most of the code. I spend my time where it matters: making decisions and validating results. Every change goes from idea to `main` along the same five steps. Steps 2 and 5 are mine; the rest runs on agents.
 
-- Specification-first: define intent and acceptance criteria before implementation.
-- Domain-driven: shape bounded contexts, language, and boundaries before wiring technology.
-- TDD as a domain sub-process: use Red/Green/Refactor cycles inside each domain slice for executable design and fast feedback.
-- Architecture guardrails: keep decisions visible through guidelines, templates, and repeatable standards.
-- AI as a harness: combine MCP guidelines, reusable Copilot agents, and instruction/skill packs so AI output stays aligned with architecture.
-- Human in the loop is applied every step of the way, from specs and DoR to review and deploy decisions.
+1. **Capture.** Ideas, bugs, and notes land in the Inbox of [Backlog](https://github.com/JSdotNet/Backlog), from my phone, the desktop, or the IDE.
+2. **Design.** A proposal or a design canvas, with every open decision numbered and then taken. Nothing is planned while a decision is still open.
+3. **Plan.** The design is imported as a Backlog plan: 10 to 15 entries in dependency order. Each entry is a self-contained prompt holding the settled facts, the files, the design board, and the tests. The first entry updates the devbook chapter, so the spec moves before the code. The last ones validate the result in a test harness and check the plan for anything that was missed.
+4. **Execute.** The plan runs unattended. Each entry gets its own worktree session that runs the [delivery flow](https://github.com/JSdotNet/devbook): implement and review per slice, build and test, verify, spec check. Each entry lands as a draft pull request and reports back what it checked, what changed along the way, and what it could not prove.
+5. **Validate.** I review every draft before it merges. Nothing reaches `main` without that personal validation.
 
-In the current projects, this shows up as a living workflow: write specs and structure first, implement in small slices, and continuously refine based on what we learn.
+```mermaid
+flowchart TB
+  CAP["1 · Capture<br/>phone · desktop · IDE → Inbox"] --> DES
+  DES["2 · Design<br/>proposal or design canvas<br/>decisions numbered and taken"] --> PLAN
+  PLAN["3 · Plan<br/>ordered entries, each a self-contained prompt"] --> EXE
 
-Workflow snapshot:
+  subgraph EXE["4 · Execute — unattended, one worktree session per entry"]
+    direction LR
+    E1["Devbook chapter first"] --> E2["Code slices<br/>implement · review · test · verify"]
+    E2 --> E3["QA in the harness"] --> E4["Review the plan for gaps"]
+  end
+
+  EXE -->|"draft PR per entry<br/>+ report back"| PV{{"5 · Validate<br/>I review every draft"}}
+  PV -->|approve| MAIN["main"]
+  PV -.->|revise| EXE
+
+  DB[("devbook<br/>architecture · domain · design")]
+  DB -. context .-> PLAN
+  E1 -. updates .-> DB
+
+  classDef me fill:#FEF3C7,stroke:#B45309,stroke-width:2px,color:#451A03;
+  classDef docs fill:#EEF2FF,stroke:#3730A3,stroke-width:2px,color:#1E1B4B;
+  classDef done fill:#DCFCE7,stroke:#15803D,stroke-width:2px,color:#052E16;
+  class DES,PV me;
+  class DB docs;
+  class MAIN done;
+```
+
+The principles behind it:
+
+- **Specification first.** The devbook (arc42, domain, design, and tech chapters) is the source of truth, and after every change a spec check reports whether code and chapter still agree.
+- **Domain-driven.** Bounded contexts, ubiquitous language, and modular boundaries come before wiring technology. Inside each domain slice, Red/Green/Refactor keeps the design executable.
+- **Small, reviewable slices.** One entry, one session, one draft pull request. That keeps sessions parallel and reviews short.
+- **Human in the loop at the decisions.** I take the design decisions and I approve every result. Agents handle the work in between.
+
+### Routines and Feedback Loops
+
+35 scheduled routines across five repositories keep the work honest while I am not looking. They land as draft pull requests or short briefs, never as merges:
+
+| Cadence | Routines |
+| --- | --- |
+| Daily | Devbook validation |
+| Weekdays | Issue sweep (classify, close what is resolved, draft fixes), merge review, morning brief |
+| Weekly | Package and stack updates, technology graph refresh, devbook verify (spec against code), prose and instruction review, change report, weekly update |
+| Weekend | Retro over every session in every repository, landing improvements in the tooling itself |
 
 ```mermaid
 flowchart LR
-  A[Specs] --> T1
+  CODE["Code"] <-->|"devbook verify<br/>spec check"| SPEC[("devbook")]
+  CODE -->|"issue sweep<br/>merge review"| INBOX["Backlog"]
+  SPEC -->|"drift"| INBOX
+  INBOX -->|"next plan"| CODE
 
-  subgraph D["Domain as Foundation (TDD)"]
-    T1[Red: Test] --> T2[Green: Minimal Implementation]
-    T2 --> T3[Refactor]
-    T3 --> T1
-  end
+  SESS["Sessions"] -->|"weekly retro<br/>instruction review"| HARN["AI harness<br/>plugins · skills · rules"]
+  HARN -->|"runs"| SESS
+  SESS -->|"draft PRs"| CODE
 
-  C["Feature (Full stack)"]
-  T3 --> C
-
-  T1 -. update .-> A
-  T2 -. update .-> A
-  T3 -. update .-> A
-  C -. update .-> A
-
-  classDef tddRed fill:#FEE2E2,stroke:#B91C1C,stroke-width:2px,color:#450A0A;
-  classDef tddGreen fill:#DCFCE7,stroke:#15803D,stroke-width:2px,color:#052E16;
-  classDef tddRefactor fill:#FEF3C7,stroke:#B45309,stroke-width:2px,color:#451A03;
-  class T1 tddRed;
-  class T2 tddGreen;
-  class T3 tddRefactor;
+  classDef docs fill:#EEF2FF,stroke:#3730A3,stroke-width:2px,color:#1E1B4B;
+  classDef harness fill:#FDF4FF,stroke:#A21CAF,stroke-width:2px,color:#581C87;
+  class SPEC docs;
+  class HARN harness;
 ```
 
-### Automations and Routines
-
-I use lightweight automation rhythms to keep work moving and quality visible:
-
-- Daily: triage GitHub bugs, for example working through the top 5 issues labeled bug.
-- Weekly: run package updates, review technical news, and run session reviews to improve routines and AI-Harnass.
-- Issue-based: refine issue content to Definition of Ready (DoR) before implementation starts.
-- PR-based: run structured pull-request reviews, resolve remarks, and tighten specs/docs before merge.
-
-```mermaid
-flowchart TD
-  W[Weekly Routine: Package Updates News Session Review]
-  D[Daily Routine: Top 5 Bug Triage]
-  IR[Issue-Based Routine: DoR Refinement]
-  PRR[PR-Based Routine: Review and Merge]
-
-  ISS[Issues]
-  PR[Pull Requests]
-  DEP[Deploy]
-  RUN[Running Environment]
-
-  W --> D
-  W -->|results in| PR
- 
-
-  ISS -->| starts | D
-  D -->|results in| PR
-
-
-  ISS -->|starts| IR
-  IR -->| update | ISS
-
-  PR -->|starts| PRR
-  PRR -->|update| PR
-
-  PR --> DEP
-  DEP --> RUN
-
-  RUN -. runtime logging creates or updates .-> ISS
-  DEP -. release feedback creates or updates .-> ISS
-
-  classDef issues fill:#EEF2FF,stroke:#3730A3,stroke-width:2px,color:#1E1B4B;
-  classDef prs fill:#FDF4FF,stroke:#A21CAF,stroke-width:2px,color:#581C87;
-  classDef deploy fill:#ECFDF5,stroke:#047857,stroke-width:2px,color:#064E3B;
-  classDef runtime fill:#FFF7ED,stroke:#C2410C,stroke-width:2px,color:#7C2D12;
-  class ISS issues;
-  class PR prs;
-  class DEP deploy;
-  class RUN runtime;
-```
+There are three loops. Code and spec are checked against each other. Findings flow back into the backlog. And the way I work with AI is reviewed every weekend and improved as code, in the same repositories as everything else.
 
 ## What I Am Building
 
-- [Copilot](https://github.com/JSdotNet/Copilot)  
-  Plugin ecosystem with agents, instructions, and skills for architecture, coding, docs, and reviews.  
-  State: Active and evolving (new plugins, skills, and orchestration patterns).
+- [devbook](https://github.com/JSdotNet/devbook)  
+  Plugin marketplace for the devbook convention (addressed architecture, domain, tech, design, and AI chapters) and the delivery engine: `flow-code` / `flow-spec`, live run dashboards, and scheduled routines for Claude Code Routines and Copilot Automations.  
+  State: Active, the core of my AI harness (released in lockstep across all plugins).
 
-- [Project-Guidelines-MCP](https://github.com/JSdotNet/Project-Guidelines-MCP)  
-  MCP server that gives Copilot and compatible tools direct access to architecture and coding guidelines.  
-  State: Active foundation for my AI harness (expanding guideline coverage and integrations).
+- [ai-plugins](https://github.com/JSdotNet/ai-plugins)  
+  Specialist plugins the flows consult — architecture, C#, React, QA, domain design, UX, documentation, security — each authored once and loaded by both Claude Code and GitHub Copilot.  
+  State: Active and evolving.
 
 - [Backlog](https://github.com/JSdotNet/Backlog)  
-  AI-driven work management for backlog items, prompts, knowledge, and project flow.  
-  State: In setup and discovery (shaping workflow, domains, and first implementation slices).
+  Local-first, AI-first work management for work items, prompts, knowledge, roadmaps, and devbooks — a desktop app (MSIX), an Android app, IDE integration, and a thin sync service.  
+  State: In use and released continuously.
+
+- [finance](https://github.com/JSdotNet/finance)  
+  Personal finance tracker, set up devbook-first: architecture, domain, and design defined before the first feature.  
+  State: Early (specs and structure in place).
+
+- [Project-Guidelines-MCP](https://github.com/JSdotNet/Project-Guidelines-MCP)  
+  .NET MCP servers that serve architecture, coding, and design guidelines to AI assistants, plus a publish-results server.  
+  State: Maintained.
 
 - [Lets-BBQ](https://github.com/JSdotNet/Lets-BBQ)  
-  AI-first .NET 10 playground for spec-first development and modular monolith experiments.  
-  State: Planned (next sandbox for testing architecture choices, AI workflow patterns, and delivery loops).
+  .NET 10 + Aspire modular-monolith sandbox for spec-first development.  
+  State: On hold.
 
 ## Collaboration
 
